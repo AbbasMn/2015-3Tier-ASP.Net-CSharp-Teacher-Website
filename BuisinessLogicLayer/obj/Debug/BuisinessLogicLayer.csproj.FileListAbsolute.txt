@@ -1,0 +1,8 @@
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\BuisinessLogicLayer\bin\BuisinessLogicLayer.dll
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\BuisinessLogicLayer\bin\BuisinessLogicLayer.pdb
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\BuisinessLogicLayer\bin\DataAccessLayer.dll
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\BuisinessLogicLayer\bin\PersianDatePickup.dll
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\BuisinessLogicLayer\bin\DataAccessLayer.pdb
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\BuisinessLogicLayer\obj\Debug\BuisinessLogicLayer.csprojResolveAssemblyReference.cache
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\BuisinessLogicLayer\obj\Debug\BuisinessLogicLayer.dll
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\BuisinessLogicLayer\obj\Debug\BuisinessLogicLayer.pdb

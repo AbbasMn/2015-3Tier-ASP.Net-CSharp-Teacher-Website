@@ -1,0 +1,29 @@
+﻿.Groups.min .ICO{position:absolute;width:auto;margin-right:-75px;margin-top:30px;width:auto;height:auto;}
+
+.Projects .ProjectICO{margin-right:-40px;}
+
+
+a{text-decoration:none;}
+
+
+.SlideShow{width:100%;}
+
+
+
+
+.CustomSlideShow .SlideShow{border-top:solid 1px gray;padding-top:0px;border-radius:10px 10px 10px 10px;}
+.CustomSlideShow .SlideShow #Slide{border-radius:10px 10px 10px 10px;}
+
+
+
+.SlideShow #Slide{border-radius:10px 10px 10px 10px;}
+.SlideShow #progress{margin:0px auto;margin-top:-240px;margin-left:430px;}
+
+.SlideShow #Navigator{margin-top:8px;}
+.SlideShow #Navigator ul{list-style:none;cursor:pointer;padding:0px;margin:0px;direction:ltr;}
+.SlideShow #Navigator ul li{display:inline;padding-right:0px;padding-left:0px;}
+
+.SlideShow #Navigator li a{outline:0;padding:5px;background:url(../images/Icons/bolet.gif) no-repeat center center;}
+.SlideShow #Navigator li a:hover{background:url(../images/Icons/bulet-m.gif) no-repeat center center;}
+.SlideShow #Navigator li a.selected{background:url(../images/Icons/bolet.gif) no-repeat center center;}
+

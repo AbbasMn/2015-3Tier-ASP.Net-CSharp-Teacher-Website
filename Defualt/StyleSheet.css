@@ -1,0 +1,3042 @@
+﻿
+
+/*>>>>>>>>> Public CSS          <<<<<<<<<<<<*/
+.pTitleLeft
+{
+    font-family:Arial;
+    font-size:9pt;
+    font-style:normal;
+    font-weight:bold;
+    text-align:left;
+    text-justify:auto;
+    margin:1px 0px 1px 3px;
+}
+
+.pTitleRight
+{
+    font-family:Tahoma;
+    font-size:8pt;
+    font-style:normal;
+    font-weight:bold;
+    text-align:right;
+    text-justify:auto;
+    margin:1px 3px 1px 0px;
+}
+
+
+.pLineLeft
+{
+    font-family:Arial;
+    font-size:9pt;
+    font-style:normal;
+    font-weight:normal;
+    direction:ltr;
+    text-align:justify;
+    text-justify:distribute;
+    margin:1px 0px 1px 6px;
+    
+}
+.pLineRight
+{
+    font-family:Tahoma;
+    font-size:8pt;
+    font-style:normal;
+    font-weight:normal;
+    direction:rtl;
+    text-align:justify;
+    margin:1px 6px 1px 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.borderGray
+{
+    border: 1px solid #c8c8c8;
+}
+
+.lnk
+{
+    text-decoration: none;
+}
+
+.noBorder
+{
+    border: 0px;
+}
+
+.blueBack
+{
+    /*background-color:rgb(0,163,229);*/
+    background-color: #1777b1;
+}
+
+.rightAlign
+{
+    text-align:right;
+}
+
+.GridView
+{
+    border:1px solid gray;
+}
+
+.pagerGridView
+{
+    font-size:14px;
+    font-weight:bold;
+}
+
+.grayBack
+{
+    background-color: #565656;
+}
+
+.orangeBack
+{
+    background-color: #ffaf00;
+}
+
+.orangeText
+{
+    color: #ffaf00;
+}
+
+.blueText
+{
+    color: #16387c;
+}
+
+.grayText
+{
+    color: #38393a;
+}
+
+.grayTextLow
+{
+    color: #787878;
+}
+
+.whiteText
+{
+    color: White;
+}
+
+.framM
+{
+    width: 50px;
+    height: 50px;
+}
+
+.divHidden
+{
+    visibility: hidden;
+    height: 0px;
+    display: none;
+}
+
+.textBox
+{
+    font-size: 12px;
+    font-family: Tahoma;
+    direction: rtl;
+}
+
+.textBoxLTR
+{
+    direction: ltr;
+}
+
+.ltr
+{
+    direction: ltr;
+}
+
+.drpdwn
+{
+    font-size: 12px;
+    font-family: Tahoma;
+    direction: ltr;
+}
+
+.lstbox
+{
+    font-family: Tahoma;
+    direction: rtl;
+}
+
+.btn
+{
+    font-size: 12px;
+    font-family: Tahoma;
+    cursor: pointer;
+    padding: 2px 6px 2px 4px;
+}
+
+.btnBig
+{
+    padding: 5px 10px 5px 10px;
+}
+
+.btnVeryBig
+{
+    padding: 5px 10px 5px 10px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.btnBigBold
+{
+    padding: 5px 10px 5px 10px;
+    font-weight:bold;
+}
+
+.btnWidth
+{
+    padding: 5px 20px 5px 20px;    
+}
+
+.fontSize12
+{
+    font-size: 12px;
+}
+
+.divBtn
+{
+    height: 16px;
+    text-align: center;
+    cursor: pointer;
+    padding: 1px 0px 0px 0px;
+}
+
+/* blueBtn should add to blueBack */
+.blueBtn
+{
+    border:0px;
+    color:White;
+}
+
+.grayBtn
+{
+    border-right: 1px solid #a4a4a4;
+    border-bottom: 1px solid #a4a4a4;
+    border-top: 1px solid #dddddd;
+    border-left: 1px solid #dddddd; /*padding:0px 10px 2px 6px;         <<<<<<<<<<<<*/
+    background-image: url(image/grayBtn.gif);
+    background-repeat: repeat-x;
+    background-position: bottom left;
+}
+
+.orangeBtn
+{
+    background-image: url(image/orangeBtn.gif);
+    background-repeat: repeat-x;
+    background-position: top right;
+}
+
+.divHover
+{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    font-weight: bold;
+}
+
+.lblError
+{
+    color: Red;
+    font-size: 12px;
+}
+
+.lblSuccess
+{
+    color: Green;
+    font-size: 12px;
+}
+
+.divMsgShowBigCenter
+{
+    font-weight:bold;
+    text-align:center;
+}
+
+.lblTitlePage
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.pageNumGridView
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.counterCode
+{
+    margin: 0px auto 0px auto;
+    text-align: center;
+}
+
+.webDesignBy
+{
+    margin: 20px auto 0px auto;
+    text-align: center;
+}
+
+.txtNumber
+{
+    direction:ltr;
+}
+
+.txtEmail
+{
+    direction: ltr;
+}
+
+.txtEmailUserDE
+{
+    direction: ltr;
+}
+
+.imgClose
+{
+    cursor: pointer;
+}
+
+.AvatarImg
+{
+    width:60px;
+    height:60px;
+}
+
+.gabAvatarImg
+{
+    width:60px;
+    height:60px;
+    border:1px solid #bebebe;
+    padding:2px 2px 2px 2px;
+}
+
+/* Ajax GridView Public Class
+----------------------------------------------------------*/
+.rowTableDiv
+{
+    overflow: hidden;
+    width: 100%;
+    margin: 0px auto 5px auto;
+}
+
+.colTableDiv
+{
+    float: right;
+    margin: 0px auto 0px 2px;
+}
+
+.colTableDivLeft
+{
+    float: left;
+    margin: 0px auto 0px 2px;
+}
+
+.colTableDiv20
+{
+    width: 20px;
+}
+
+.colTableDiv100
+{
+    width: 100px;
+}
+
+
+/*>>>>>>>>> User master page         <<<<<<<<<<<<*/
+.CPHContentUserMP
+{
+    background-color: White;
+    padding: 15px 15px 15px 15px;
+}
+
+
+
+/*>>>>>>>>> Admin Header          <<<<<<<<<<<<*/
+.CNTAdminMP
+{
+    background-color: White;
+    padding: 15px 15px 15px 15px;
+}
+
+.menuAdminMP
+{
+    margin: 0px auto 10px auto;
+    font-size:10px;
+}
+
+/*>>>>>>>>> Admin Home      <<<<<<<<<<<<*/
+.linkAH
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.divLinkAH
+{
+    margin: 15px 10px 0px auto;
+}
+
+.commentLinkAH
+{
+    color: Gray;
+    margin: 5px auto 0px auto;
+}
+
+.rowAH
+{
+    margin: 15px auto 0px auto;
+}
+
+
+/*>>>>>>>>> Header          <<<<<<<<<<<<*/
+
+.body
+{
+    /*background-color: #e5edef;*/
+    background-image: url('image/topBack.jpg');
+    background-repeat: no-repeat;
+    background-position:50% top;
+    direction: ltr;
+    font-family: Tahoma;
+    font-size: 12px;
+}
+
+.bodyPages
+{
+    direction: rtl;
+    font-family: Tahoma;
+    font-size: 10px;
+}
+
+.searchHeader
+{
+    position:absolute;
+    top:-4px;
+    right:0px;
+    border:1px solid #219ed4;
+    padding:25px 10px 10px 10px;
+}
+
+.divBody
+{
+    position: relative;
+    margin: -8px auto 0px auto;
+    padding: 0px;
+    direction: rtl;
+    min-height: 600px;
+    overflow:hidden;
+}
+
+.widthPage
+{
+    width: 960px;
+}
+
+.head
+{
+    margin: 100px auto 0px auto;
+    border-bottom: 2px solid #707578;
+    position: relative;
+}
+
+.nameImg
+{
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+.rss
+{
+    color: #707578;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    bottom: 0px; /*     opacity:0.6;     filter:alpha(opacity=60);          <<<<<<<<<<<<*/
+    width: 482px;
+    background-color: White;
+}
+
+.welcome
+{
+    font-size: 14px;
+    border-bottom: 6px solid #d42462;
+    padding: 0px auto 0px auto;
+    height: 25px;
+    width: 218px;
+    position: relative;
+    margin: 0px 0px -2px auto;
+}
+
+.lineHead
+{
+    margin: 8px auto 0px auto;
+    position: relative;
+}
+
+.menuHead
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 600px;
+    height: 26px;
+}
+
+.backMenuH
+{
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    background-color: White;
+    top: 0px;
+}
+
+.backHoverMenuH
+{
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background-color: White;
+}
+
+.txtMenuH
+{
+    position: relative;
+    float: left;
+}
+
+.lnkHead
+{
+    vertical-align: middle;
+    color: #707578;
+    width: 120px;
+    text-align: center;
+    float: left;
+}
+
+.txtLnkHead
+{
+    font-size: 12px;
+    color: #464646;
+}
+
+.divtxtLnkHead
+{
+    margin: 5px auto 6px auto;
+    font-weight:bold;
+}
+
+.cph
+{
+    margin: 15px auto 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cphRightMenu
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+
+/*>>>>>>>>> Discretion Edit          <<<<<<<<<<<<*/
+.txtNameDE
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.divMessageDE
+{
+    margin: 10px 0px 20px 0px;
+}
+
+.colTableDiv01DE
+{
+    width: 100px;
+    text-align: left;
+    margin: 0px auto 0px 5px;
+}
+
+/*>>>>>>>>> Default Page          <<<<<<<<<<<<*/
+
+.row1DF
+{
+    position: relative;
+    height: 398px;
+    border-bottom: 15px solid #ffaf00;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.reyhanDF
+{
+    float: left;
+    width: 138px;
+    margin: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.ContentRow1
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.workPage
+{
+    position: absolute;
+    right: 120px;
+}
+
+.personalPage
+{
+    position: absolute;
+    top: 0px;
+    right: -850px;
+}
+
+.divImgMe
+{
+    width: 110px;
+    height: 343px;
+    margin: 10px 0px 0px 0px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.imgMe
+{
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+}
+
+.imgWork
+{
+    /*background-image: url(image/personalImg.png);*/
+}
+
+.imgPer
+{
+    /*background-image: url(image/workImg.png);*/
+}
+
+.navar
+{
+    height: 35px;
+    position: relative;
+}
+
+.imgTitlePage
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 110px;
+    position: absolute;
+    top: 0px;
+}
+
+.imgTxtWork
+{
+    background-image: url(image/txtWork.png);
+    right: 0px;
+}
+
+.imgTxtPersonal
+{
+    background-image: url(image/txtPersonal.png);
+    right: 850px;
+    cursor: pointer;
+}
+
+.fadeUnderImg
+{
+    background-repeat: repeat-x;
+    background-position: center;
+    width: 35px;
+    height: 353px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.blueFade
+{
+    background-image: url(image/blueFade.png);
+    background-position: left top;
+}
+
+.orangFade
+{
+    background-image: url(image/orangFade.png);
+    background-position: left top;
+}
+
+.right
+{
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    background-image: url(image/right.png);
+    margin: 23px auto auto auto;
+}
+
+.rightW
+{
+    background-position: -26px top;
+}
+
+.rightW2
+{
+    background-position: left top;
+}
+
+.rightG
+{
+    background-position: right top;
+}
+
+.rightG2
+{
+    background-position: -52px top;
+}
+
+.divImgMeHover
+{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.news
+{
+    background-color: White;
+    width: 455px;
+    height: 341px;
+    float: right;
+    position: relative;
+    margin: 10px 10px 0px 0px;
+    top: 0px;
+    right: 0px;
+}
+
+.priceDefault
+{
+    font-size: 12px;
+    font-weight: bold;
+    width: auto;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    z-index: 100;
+    cursor: pointer;
+    direction: rtl;
+}
+
+.ToolTipPriceDefault
+{
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    top: -23px;
+    left: 0px;
+    right: 0px;
+    padding: 4px 10px 4px 10px;
+    background-color: Gray;
+    color: White;
+    visibility: hidden;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.ToolTipPriceHoverDefault
+{
+    visibility: visible;
+}
+
+.priceHoverDefault
+{
+    background-color: White;
+}
+
+.cntPriceDefault
+{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    background-color: rgb(236,236,236);
+    color: Red;
+    padding: 6px 15px 6px 15px;
+    float: left;
+}
+
+.countNewsDefault
+{
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    font-size: 9px;
+    float: left;
+    margin: 5px auto 0px 5px;
+}
+
+.countNewsHoverDefault
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.cntPriceHoverDefault
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-color: rgb(55,55,55);
+    color: White;
+}
+
+.imgTitr1
+{
+    margin: 15px 12px 0px 0px;
+    width: 430px;
+    height: 153px;
+}
+
+.txtImg1
+{
+    margin: 8px 12px 10px 0px;
+    width: 430px;
+    height: 68px;
+    overflow: hidden;
+    position: relative;
+}
+
+.divtxtLeadTitr1BigDF
+{
+    margin: 8px auto 0px auto;
+    height: 24px;
+    overflow: hidden;
+    text-align: justify;
+    font-size:10px;
+}
+
+.nextNewsDF
+{
+    font-size: 9px;
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+.titr1
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.titrs1
+{
+    height: 81px;
+    border-top: 2px solid #4f4f4f;
+    background-image: url(image/backTitrs1.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    margin: 5px 0px 0px 0px;
+}
+
+.cntTitrs1
+{
+    width: 104px;
+    height: 74px;
+    float: left;
+    margin: -8px 13px 0px 0px;
+    text-align: center;
+    padding: 18px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.cntTitrs1Back
+{
+    background-image: url(image/selectedTitrs1.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.selectedTitrs1
+{
+    background-image: url(image/selectedTitrs1.png);
+}
+
+.imgbtnTitr1
+{
+    width: 88px;
+    height: 32px;
+    border: 2px solid #ffffff;
+}
+
+.titrs1Low
+{
+    width: 88px;
+    font-size: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    max-height: 33px;
+    overflow: hidden;
+}
+
+.DivimgReyhanDF
+{
+    width: 960px;
+    margin: 15px auto 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgReyhanDF
+{
+    width: 960px;
+}
+
+.publicityBottomDefault
+{
+    margin: 5px auto 5px auto;
+    padding:0px;
+    position: relative;
+}
+
+.imgPublicityBottomDefault
+{
+    width: 960px;
+    padding:0px;
+    margin:0px;
+}
+
+.fadeReyhanDF
+{
+    background-image: url(image/fadeReyhan.png);
+    position: absolute;
+    top: 100px;
+    right: -180px;
+    width: 676px;
+    height: 487px;
+}
+
+.footerDF
+{
+    background-image: url('image/footerB.png');
+    background-repeat: repeat-x;
+    position: relative;
+    width: 960px;
+    height: 260px;
+    top: 0px;
+    right: 0px;
+}
+
+
+.cntFooterDF
+{
+    float: right;
+    width: 220px;
+    height:175px;
+    margin: 10px 9px 0px 9px;
+    text-align:center;
+    text-indent:10px;
+
+    /*#1777b1 #ffaf00*/
+    border: 1px solid black ;
+    
+  -webkit-border-radius:12px 12px 12px 12px;
+	-moz-border-radius:12px 12px 12px 12px;
+	-khtml-border-radius:12px 12px 12px 12px;
+	
+	background:#ffffff;
+	
+	-webkit-box-shadow:3px 3px 5px rgba(0,0,0,0.6);
+	-moz-box-shadow:3px 3px 5px rgba(0,0,0,0.6);
+	-khtml-box-shadow:3px 3px 5px rgba(0,0,0,0.6);   
+}
+
+.lnkFooter
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: Black;
+}
+
+.divImgFooter
+{
+    margin: 22px auto 0px auto;
+    text-align: center;
+}
+
+.lnkFooter
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: Black;
+}
+
+.divImgFooter
+{
+    margin: 22px auto 0px auto;
+    text-align: center;
+}
+
+.lnkFooter
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: Black;
+}
+
+.divImgFooter
+{
+    margin: 22px auto 0px auto;
+    text-align: center;
+}
+
+.imgFooterDF
+{
+    background-repeat: no-repeat;
+    background-position: center top;
+    cursor: pointer;
+}
+
+.imgResume
+{
+    border: 0px; /*background-image: url(image/resume.png);     width: 57px;     height: 92px;         <<<<<<<<<<<<*/
+}
+
+.imgPageDesign
+{
+    /*background-image: url(image/pageDesign.png);     width: 95px;     height: 109px;         <<<<<<<<<<<<*/
+}
+
+.imgSite
+{
+    /*background-image: url(image/site.png);     width: 160px;     height: 93px;         <<<<<<<<<<<<*/
+}
+
+.imgTel
+{
+    border: 0px;
+    background-image: url(image/mobile.png);
+    width: 55px;
+    height: 124px;
+}
+
+.memory
+{
+    text-align: center;
+}
+
+.lblInfoTitr
+{
+    width: 0px;
+    height: 0px;
+    font-size: 1px;
+}
+
+.lnkFriendsDF
+{
+    margin: 0px auto 15px auto;
+}
+
+/*>>>>>>>>> PublicityInsertUpdate UserControl         <<<<<<<<<<<<*/
+.txtPublicityInsertUpdateUC
+{
+    width:250px;
+}
+
+.imgPublicityInsertUpdateUC
+{
+    max-width:800px;
+}
+
+/*>>>>>>>>> ToolTip UserControl         <<<<<<<<<<<<*/
+.divTextToolTip
+{
+    direction:rtl;
+    text-align:center;
+    background-color:White;
+    position:fixed;
+    top:30px;
+    left:30%;
+    z-index:1000;
+    padding:7px 10px 10px 10px;
+    font-weight:bold;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+
+/*>>>>>>>>> AccessManager UserControl         <<<<<<<<<<<<*/
+.bodyAccessManagerUC
+{
+    padding:10px 10px 10px 10px;
+    border:1px solid gray;
+    background-color:#ebebeb;
+    background-repeat:no-repeat;
+    background-position:10px 10px;
+}
+
+.rowAccessManagerUC
+{
+    border:1px dotted gray;
+    padding:1% 1% 1% 1%;
+    width:98%;
+}
+
+.lstboxRolesAccessManagerUC
+{
+    font-weight:bold;
+    width:100px;
+}
+
+.imgCloseAccessManagerUC
+{
+    width:35px;
+}
+
+.colUserAccessManagerUC
+{
+    margin:0px 0px 10px 30px;
+    padding:5px 5px 5px 5px;
+    border:1px dotted gray;
+    width:180px;
+}
+
+.colCntUserAccessManagerUC
+{
+    margin:0px 5px 0px 0px;
+}
+
+/*>>>>>>>>> DiscretionView UserControl         <<<<<<<<<<<<*/
+
+.countDisDiscretionViewUC
+{
+    margin:20px 0px 15px 0px;
+    padding:10px 0px 10px 0px;
+    border-top:1px dotted #acacac;
+    border-bottom:1px dotted #acacac;
+}
+
+.lblCntDisDiscretionViewUC
+{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.lblLastDisDiscretionViewUC
+{
+    margin:10px 0px 0px 0px;
+    color:#acacac;
+    font-size:10px;
+}
+
+.bodyAnyDisDiscretionViewUC
+{
+    overflow:hidden;
+    width:100%;
+    margin:0px 0px 15px 0px;
+}
+
+.divInfoUserDiscretionViewUC
+{
+    float:right;
+    margin:0px 0px 0px 0px;
+    width:70px;
+    font-size:10px;
+}
+
+.nameDiscretionViewUC
+{
+    margin:5px 0px 10px 0px;
+    font-size:9px;
+    font-weight:bold;
+}
+
+.userRoleDiscretionViewUC
+{
+    color:#acacac;
+    margin:0px 0px 10px 0px;
+}
+
+.cntDisDiscretionViewUC
+{
+    margin:0px 80px 0px 0px;
+    border:1px solid #cfd6e0;
+}
+
+.paddingcntDisDiscretionViewUC
+{
+    padding:10px 15px 15px 15px;
+}
+
+.headerDisDiscretionViewUC
+{
+    background-color:#f3f5f9;
+    border-bottom:1px solid #cfd6e0;
+    padding-bottom:7px;
+}
+
+.footerDisDiscretionViewUC
+{
+    border-bottom:0px;
+    border-top:1px solid #cfd6e0;
+    
+    background-color:#f5f5f5;
+    font-weight:normal;
+    font-size:10px;
+    overflow:hidden;
+}
+
+.imgCommentftrDisDiscretionViewUC
+{
+    margin:0px 0px 0px 5px;
+}
+
+.colCommentUserDiscretionViewUC
+{
+    width:90%;
+}
+
+.dateTimeDiscretionViewUC
+{
+    color:#acacac;
+    margin:7px 0px 0px 0px;
+    font-size:11px;
+}
+
+.bodyRegDisDiscretionViewUC
+{
+    border:1px solid #cfd6e0;
+    width:100%;
+    overflow:hidden;
+}
+
+.headerRegDisDiscretionViewUC
+{
+    background-color:#f3f5f9;
+    padding:10px 0px 8px 0px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.rowTblRegDisDiscretionViewUC
+{
+    margin: 8px 0px 0px 0px;
+}
+
+.colTblRegDisDiscretionViewUC
+{
+    margin: 0px 0px 0px 5px;
+    width:100px;
+    font-weight:bold;
+    text-align:left;
+}
+
+
+.txtboxWidthDiscretionViewUC
+{
+    width: 184px;
+}
+
+.cntRegDisDiscretionViewUC
+{
+    overflow:hidden;
+    margin:10px 15px 5px 15px;
+}
+
+.pnlSendDisToUserDiscretionViewUC
+{
+    background-color:#212c34;
+    color:White;
+    border:1px solid #cfd6e0;
+    font-weight:bold;
+    text-align:center;
+    margin:0px 0px 15px 0px;
+    padding:15px 5px 7px 5px;
+}
+
+.pnlSendDisToUserDiscretionViewUC:hover
+{
+    background-color:#f5f5f5;
+    color:#212c34;
+}
+
+.chkboxSendDisToUserDiscretionViewUC
+{
+    cursor:pointer;
+}
+
+
+
+/*>>>>>>>>> ChangePassword UserControl         <<<<<<<<<<<<*/
+.pnlLoginLoginUC
+{
+    font-size:11px;
+}
+
+.btnLoginLoginUC
+{
+    padding:1px 15px 4px 15px;
+}
+
+.txtUserNamePassLoginUC
+{
+    text-align:center;
+    direction:ltr;
+    width:90px;
+    
+}
+
+
+
+/*>>>>>>>>> ChangePassword UserControl         <<<<<<<<<<<<*/
+.pnlBodyChangePasswordUC
+{
+    padding:10px 10px 10px 10px;
+}
+
+/*>>>>>>>>> UserManage UserControl         <<<<<<<<<<<<*/
+.rowTableUserManageUC
+{
+    margin:10px 10px 10px 10px;
+}
+
+.colTableUserManageUC
+{
+    margin:0px 0px auto 10px;
+}
+
+.aimgSelectUserManageUC
+{
+    cursor:pointer;
+}
+
+/*.aimgSelectUserManageUC:hover
+{
+    background-color:#f5f5f5;
+}*/
+
+
+/*>>>>>>>>> Message UserControl         <<<<<<<<<<<<*/
+.bodyMessageUC
+{
+    font-weight:bold;
+    font-size:13px;
+    margin:0px 0px 20px 0px;
+}
+
+.pnlsMessageUC
+{
+    border:1px solid gray;
+    padding:10px 10px 5px 10px;
+    margin:0px 0px 5px 0px;
+}
+
+.pnlSuccessMessageUC
+{
+    background-color:#c1ff00;
+}
+
+.pnlErrorMessageUC
+{
+    background-color:#ffd2d2;
+}
+
+
+/*>>>>>>>>> MessageSend UserControl         <<<<<<<<<<<<*/
+.bodyMessageSendUC
+{
+    position: fixed;
+    top: 158px;
+    right: 0px;
+    overflow: hidden;
+    direction: rtl;
+    font-size: 12px;
+    width: 48px;
+    margin: 0px;
+    
+}
+
+.img-MessageSendUC
+{
+    width: 40px;
+}
+
+.divImgMessageSend
+{
+    cursor: pointer;
+    float: right;
+    margin: 0px 5px auto auto;
+}
+
+.cnt-MessageSendUC
+{
+    float: right;
+    background-color: rgb(0,163,229);
+    width: 0px;
+    overflow: hidden;
+    margin: 6px 0px 0px 0px;
+}
+
+.middelPanel-MessageSendUC
+{
+    float: left;
+    width: 280px;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 10px 0px 10px;
+    background-color: White;
+}
+
+.rightBaner-MessageSendUC
+{
+    width: 27px;
+    float: right;
+    margin: 0px auto 0px auto;
+    background-color: rgb(255,175,0);
+}
+
+.leftBaner-MessageSendUC
+{
+    float: left;
+    width: 16px;
+}
+
+.col01-MessageSendUC
+{
+    width: 40px;
+}
+
+.title-MessageSendUC
+{
+    font-weight: bold;
+    margin: 5px auto 5px auto;
+}
+
+.textBox-MessageSendUC
+{
+    font-size: 12px;
+}
+
+
+/*>>>>>>>>> SlideView UserControl         <<<<<<<<<<<<*/
+.bodySV
+{
+    position: relative;
+    direction: rtl;
+    overflow: hidden;
+    height: auto;
+}
+
+.bodySVFullScreen
+{
+    margin: 0px auto 0px auto;
+}
+
+.bodySVOut
+{
+    
+}
+
+.bodySVOutFullScreen
+{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 300;
+    height: 100%;
+    direction: ltr;
+    text-align: center;
+    overflow: scroll;
+}
+
+.imgThisNews
+{
+    text-align: center;
+    padding: 5px 7px 3px 7px;
+    margin: 0px 20px 0px 0px;
+    width: 84px;
+}
+
+.textAltFullScreenSlidView
+{
+    font-size:18px;
+    font-weight:bold;
+    color:White;
+    margin:5px auto 0px auto;
+    padding:7px 15px 10px 15px;
+    max-width: 60%;
+    direction:rtl;
+}
+
+.divBtnRLP
+{
+    width: 100px;
+    margin: 0px auto 0px auto;
+    position: relative;
+}
+
+.btnRLP
+{
+    background-image: url(image/btnRLPSV.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 27px;
+    height: 21px;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    margin: 0px 5px 0px auto;
+}
+
+.btnRP:hover
+{
+    background-position: right -24px;
+}
+
+.btnLP
+{
+    background-position: top left; 
+    left: 0px;
+}
+
+.btnLP:hover
+{
+    background-position: left -24px;
+}
+
+.btnPlaySV
+{
+    background-position: -30px 0px;
+    right: 34px;
+}
+
+.btnPlaySV:hover
+{
+    background-position: -30px -24px;
+}
+
+.btnPauseSV
+{
+    background-position: -59px 0px;
+}
+
+.btnPauseSV:hover
+{
+    background-position: -59px -24px;
+}
+
+.counterPage
+{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    font-weight: bold;
+    font-size:12px;
+}
+
+.colorBackgroundSV
+{
+    position: relative;
+    margin: 0px;
+}
+
+.bodyFullScreenSVHide
+{
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 200;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    visibility: hidden;
+    padding:0px 0px 10px 0px;
+}
+
+.bodyFullScreenSVShow
+{
+    visibility: visible;
+}
+
+.slidSV
+{
+    width: 1000px;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
+.divImgsSV
+{
+    text-align: center;
+    margin: 30px 10px 10px 0px;
+    width: 130px;
+    float: right;
+}
+
+.imgSV
+{
+    max-width: 120px;
+    border: 4px solid White;
+    cursor: pointer;
+}
+
+.imgSVFullScreenShow
+{
+    max-width: 70%;
+    margin: 0px auto 20px auto;
+}
+
+.imgSVFullScreenHide
+{
+    display: none;
+}
+
+.imgCloseSVHide
+{
+    position: fixed;
+    top: 60px;
+    right: 100px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.imgCloseSVShow
+{
+    visibility: visible;
+}
+
+
+
+/*>>>>>>>>> BestLnks UserControl         <<<<<<<<<<<<*/
+.bestLinks
+{
+    width: 127px;
+    height: 341px;
+    background-color: White;
+    float: right;
+    position: relative;
+    margin: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.txtBestLnks
+{
+    position: absolute;
+    bottom: 0px;
+    height: 35px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.imgTopBtm
+{
+    background-image: url(image/topbtm.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 32px;
+    cursor: pointer;
+    background-position: right top;
+    position: absolute;
+    left: 0px;
+}
+
+.top
+{
+    bottom: 112px;
+}
+
+.bottom
+{
+    bottom: 72px;
+    background-position: right -70px;
+}
+
+.topG
+{
+    background-position: right -35px;
+}
+
+.bottomG
+{
+    background-position: right bottom;
+}
+
+.firstLnks
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.firstLnks1
+{
+    top: 0px;
+}
+
+.firstLnks2
+{
+    top: 342px;
+}
+
+.cntLnks
+{
+    
+}
+
+.PublicityBestLinksUC
+{
+    margin: 28px auto 0px 14px;
+    padding: 0px 15px 0px 15px;
+    font-size: 9px;
+}
+
+.imgPublicityBestLinksUC
+{
+    max-width:80px;
+    height:50px;
+}
+
+
+/*>>>>>>>>> EditNews         <<<<<<<<<<<<*/
+.imgbtnNewsEN
+{
+    max-width: 140px;
+}
+
+
+
+/*>>>>>>>>> InsertNews         <<<<<<<<<<<<*/
+.imgTopBotIN
+{
+    background-image: url(image/topbtm.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-position: right top;
+}
+
+.imgBtmIN
+{
+    background-position: bottom center;
+}
+
+.imglstboxPic
+{
+    max-width: 130px;
+}
+
+.txtPriceInsertNews
+{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pnlPictureManageInsertNews
+{
+    background-color:#dfff7b;
+    padding:20px 10px 20px 10px;
+    margin-left: 0px;
+}
+
+/*>>>>>>>>> OrderManage Page         <<<<<<<<<<<<*/
+.colTableDiv01OrderManage
+{
+    width:100px;
+    text-align:left;
+    margin:0px 0px 5px 5px;
+    /*padding:-5px 0px 0px 0px; */
+}
+
+.rowTableGridViewOrderManage
+{
+    margin:20px auto 20px auto;
+    cursor:pointer;
+}
+
+.rowTableGridViewHoverOrderManage
+{
+    background-color:#94bde0;
+}
+
+
+/*>>>>>>>>> AllNews         <<<<<<<<<<<<*/
+.imgGridView
+{
+    max-width: 140px;
+    margin: 0px 0px 0px 10px;
+    float: right;
+}
+
+.rowGridViewAllNewsAN
+{
+    margin: 0px auto 15px auto;
+    border-bottom: 1px solid gray;
+    float: right;
+    width: 430px;
+}
+
+/*>>>>>>>>> AllNews user control         <<<<<<<<<<<<*/
+.rowAllNewsUC
+{
+    background-color:#e5edef;
+    background-image:url('image/backAllNews.jpg');
+    background-repeat:repeat-x;
+    background-position:bottom right;
+    padding:20px 12px 10px 12px;
+    margin:0px 0px 15px 0px;    
+    border:1px solid #c8c8c8;
+    max-width:520px;
+}
+
+.imgNewsAllNewsUC
+{
+    max-width: 140px;
+    margin: 0px 0px 0px 10px;
+    float: right;
+    border:2px solid white;
+}
+
+.lnkbtnTitrAllNewsUC
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.leadAllNewsUC
+{
+    margin:6px 0px 0px 0px;
+    text-align:justify;
+    font-size:12px;
+}
+
+.colInfoAllNewsUC
+{
+    font-size:9px;
+    margin:0px 0px 0px 5px;
+}
+
+.dateTimeAllNewsUC
+{
+    background-color:#4f4f4f;
+    font-size:10px;
+    font-weight:bold;
+    color:White;
+    padding:3px 5px 3px 5px;
+}
+
+.imgUserAllNewsUC
+{
+    width:18px;
+    height:18px;
+}
+
+.infoAllNewsUC
+{
+    color:#3e3e3e;
+    font-size:10px;
+    padding:4px 0px 0px 0px;
+}
+
+.rowInfoAllNewsUC
+{
+    float:right;
+    margin:10px 0px 0px 0px;
+}
+
+.imgEditAllNewsUC
+{
+    margin:3px 0px 0px 0px;
+    width:14px;
+}
+
+
+
+
+/*>>>>>>>>> Date user control         <<<<<<<<<<<<*/
+.DropDownList-Date
+{
+    font-size: 12px;
+    font-family: Tahoma;
+}
+
+
+/*>>>>>>>>> FileUploader control         <<<<<<<<<<<<*/
+.rowTableDiv01FileUploader
+{
+    width:240px;
+    
+    margin:0px 0px 0px auto;
+}
+
+
+
+/*>>>>>>>>> Public master page         <<<<<<<<<<<<*/
+
+.divImgMeUM
+{
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.imgMeUM
+{
+    /*background-image: url(image/imgUM.png);*/
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 353px;
+    width: 219px;
+}
+
+.fadeUnderImgUM
+{
+    background-repeat: repeat-x;
+    background-position: center top;
+    width: 35px;
+    height: 353px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.homePage
+{
+    background-image: url(image/homeP.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 108px;
+    margin: 15px 9px 0px 9px;
+}
+
+.homePageHover
+{
+    background-position: 2px top;
+}
+
+.cntUM
+{
+    
+    position: relative;
+    float: right;
+    width: 500px;
+    background-color: White;
+    margin: 0px 15px 10px auto;
+}
+
+.corner
+{
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 12px;
+    right: 0px;
+}
+
+.cornerTop
+{
+    background-image: url(image/cornerTop.png);
+    background-position: top right;
+    top: -10px;
+}
+
+.cornerBottom
+{
+    background-image: url(image/cornerBottom.png);
+    background-position: bottom right;
+    bottom: -10px;
+}
+
+.endNews
+{
+    position: relative;
+    width: 205px;
+    background-color: White;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+
+.titleEndNews
+{
+    color: White;
+    font-size: 12px;
+    text-align: center;
+    height: 25px;
+    padding: 10px 0px 0px 0px;
+}
+
+.imgEndNews
+{
+    max-width: 180px;
+}
+
+.txtBoxDis
+{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*>>>>>>>>> NewsView          <<<<<<<<<<<<*/
+.bodyNewsView
+{
+    margin: 20px auto 10px auto;
+    padding: :0px 35px 20px 35px;
+    width: 430px;
+    
+}
+
+.titrNV
+{
+    text-align: center;
+    font-size: 22px;
+}
+
+.imgNV
+{
+    max-width: 430px;
+}
+
+.txtNews
+{
+    font-size: 10pt;
+    text-align: justify;
+    /*text-indent: 10.3pt;*/
+    line-height: normal;
+    margin: 0cm 0cm 12pt;
+}
+
+.infoNews
+{
+    font-size: 10px;
+    text-align: left;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 0px 0px 5px 0px;
+    margin: 10px 0px 5px 0px;
+}
+
+.discretion
+{
+    margin: 10px auto 0px auto;
+    position: relative;
+}
+
+.headDis
+{
+    background-color: #dbe1fd;
+    padding: 6px 10px 6px 10px;
+    height: 15px;
+    font-size:11px;
+}
+
+.dateDis
+{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+
+.txtDis
+{
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    font-size: 12px;
+}
+
+.regDis
+{
+    margin: 20px auto 10px auto;
+    padding: 0px auto 10px auto;
+    overflow: hidden;
+}
+
+.nameDis
+{
+    float: right;
+    width: 90px;
+    margin: 0px 0px 0px 0px;
+}
+
+.divtxtBoxName
+{
+    float: right;
+    width: 300px;
+}
+
+.waitNewsView
+{
+}
+
+.waiting
+{
+    font-size: 12px;
+}
+
+.pnlAccessNewsView
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    /*background-color: #f5f5f5;*/
+    z-index: 1000;
+}
+
+.cntPnlAccessNewsView
+{
+    background-color:White;
+}
+
+.rowAccNewsView
+{
+    padding:10px 10px 10px 10px;
+    margin:15px 0px 0px 0px;
+    border:1px solid gray;
+    overflow:hidden;
+}
+
+.pnlPassNV
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #bebebe;
+    z-index: 100;
+}
+
+.titrPassNV
+{
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    width: 600px;
+    margin: 10% auto 0px auto;
+}
+
+.lbltitrPassNV
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.backPassNV
+{
+    background-image: url('../../Image/backPassNV.png');
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 121px;
+    margin: 20px auto 0px auto;
+}
+
+.imgPassNV
+{
+    margin: 35px 36px 25px 10px;
+    float: right;
+}
+
+.btnInPassNV
+{
+    margin: -3px -4px 0px 0px;
+    height: 21px;
+    color: #393939;
+}
+
+.txtPassNV
+{
+    width: 100px;
+    height: 15px;
+    text-align: center;
+}
+
+.pnlPriceNewsView
+{
+    background-color: rgb(255,221,127);
+    padding: 14px 0px 14px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+.dollarNewsView
+{
+    font-size: 46px;
+    float: left;
+    color: rgb(255,147,24);
+    margin: -10px 0px 0px 0px;
+}
+
+.colTableDiv01NewsView
+{
+    width: 100px;
+    padding: 0px 0px 0px 10px;
+}
+
+.colTableDiv02NewsView
+{
+    padding: 0px 15px 0px 0px;
+    border-right: 3px solid rgb(62,62,62);
+    min-height: 100px;
+}
+
+.priceNewsView
+{
+    font-size: 12px;
+}
+
+.divlblPriceNewsView
+{
+    font-size: 20px;
+}
+
+.BasketBuyNewsView
+{
+    overflow: hidden;
+    margin: 5px 0px auto 0px;
+    cursor: pointer;
+    width: 212px;
+    padding: 2px 5px 2px 5px;
+}
+
+.colTableDiv02BasketNewsView
+{
+    margin: 4px 4px auto 0px;
+}
+
+.numberBuyNewsView
+{
+    width: 20px;
+    text-align: center;
+    font-size: 9px;
+}
+
+.BasketBuyNewsViewHover
+{
+    background-color: White;
+}
+
+
+
+
+/*>>>>>>>>> Menu Best Subject         <<<<<<<<<<<<*/
+.divBestPro
+{
+    width: 232px;
+    height: 342px;
+    position: relative;
+    float: right;
+    margin: 10px 0px 0px 0px;
+}
+
+.titleBestPro
+{
+    background-position: center;
+    height: 50px;
+    margin: 0px 0px 3px 0px;
+}
+
+.titleBestProLeft
+{
+    background-position: center;
+    height: 50px;
+    margin: 0px 0px 3px 0px;
+}
+
+.txtTitleBestPro
+{
+    background-image: url(image/persianLogo.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 25px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 25px;
+}
+
+.txtTitleBestProLeft
+{
+    font-family:Times New Roman;
+    font-size:13pt;
+    font-style:normal;
+    font-weight:bold;
+    direction:ltr;
+    text-align:center;
+    padding: 15px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 15px;
+}
+
+.bandTitle
+{
+    background-image: url(image/btnGreen22.gif);
+    background-repeat: repeat-x;
+    height: 25px;
+    margin: -2px 0px 0px 0px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.blueBandHover
+{
+    background-color: #00508b;
+}
+
+.orangeBandHover
+{
+    background-color: #7e7e7e;
+}
+
+.txtTitleLeft
+{
+    margin: 0px 0px 0px 3px;
+    height: 21px;
+    padding: 4px 0px 0px 20px;
+    font-size: 11px;
+    font-weight:bold;
+    color: Black;
+    text-align:left;
+}
+
+.txtTitle
+{
+    margin: 0px 3px 0px 0px;
+    height: 21px;
+    padding: 4px 20px 0px 0px;
+    font-size: 12px;
+    color: White;
+}
+
+.add
+{
+    background-image: url(image/add.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.addLeft
+{
+    background-image: url(image/add.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.tafrig
+{
+    background-image: url(image/sub.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.tafrigLeft
+{
+    background-image: url(image/sub.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.infoBest
+{
+    background-color: White;
+    margin: 0px;
+    padding: 0px 5px 5px 0px;
+    overflow: hidden;
+}
+
+.txtTarhG
+{
+    font-size: 9px;
+}
+
+.imgBestPro
+{
+    max-width: 100px;
+    margin: 0px auto 0px 10px;
+}
+
+.imgBestProP01
+{
+    max-width: 100px;
+}
+
+
+
+/*>>>>>>>>>    Online Pay Link User Control    <<<<<<<<<<<<*/
+.bodyOnlinePayLink
+{
+    cursor:pointer;
+}
+
+.textOnlinePayLinkUC
+{
+    font-size:12px;
+    text-align:center;
+}
+
+.titleOnlinePayLinkUC
+{
+    margin: 5px auto 5px auto;
+    font-size:16px;
+    font-weight:bold;
+    color:#ff8800;
+}
+
+
+
+/*>>>>>>>>>    Buy Basket User Control    <<<<<<<<<<<<*/
+.bodyBuyBasket
+{
+    visibility: hidden;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 300;
+    text-align: right;
+    overflow: hidden;
+}
+
+.blueFixedBuyBasket
+{
+    visibility: hidden;
+}
+
+.cntBodyBuyBasket
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 300;
+    height: 100%;
+    width: 100%;
+    direction: ltr;
+    overflow: scroll;
+}
+
+.cntBuyBasket
+{
+    margin: 40px auto 20px auto;
+    width: 500px;
+    direction: rtl;
+    position: relative;
+}
+
+.panelsBuyBasket
+{
+    padding: 10px 15px 10px 15px;
+    background-color: White;
+    position: relative;
+    
+}
+
+.imgCloseBuyBasket
+{
+    width: 49px;
+}
+
+.colTableDiv01BuyBasket
+{
+    padding: 0px 0px 0px 15px;
+}
+
+.colTableDiv02BuyBasket
+{
+    padding: 0px 10px 0px 5px;
+}
+
+.colTableDiv01BuyBasket02
+{
+    border-left: 1px solid gray;
+}
+
+.titleBuyBasket
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.divTitleBuyBasket
+{
+    text-align: right;
+    margin: 0px 0px 6px auto;
+}
+
+.divHeaderEntiretyBuyBasket
+{
+    float: left;
+    margin: 30px 0px 0px 0px;
+    font-size: 12px;
+    float: left;
+}
+
+.divGridViewBuyBasket
+{
+    margin: 5px auto 5px auto;
+    background-color: rgb(202,255,38);
+}
+
+.divOnlinePayBuyBasket
+{
+    margin: 5px auto 5px auto;
+    cursor:pointer;
+}
+
+.divBtnRegBuyBasket
+{
+    float: left;
+    margin: 0px auto 0px auto;
+}
+
+.txtFooterBuyBasket
+{
+    width: 130px;
+}
+
+.colTableDiv01FooterBuyBasket
+{
+    text-align: left;
+    width: 120px;
+    margin: 0px 0px 0px 5px;
+}
+
+.TaskColGridViewBuyBasket
+{
+    width: 15%;
+}
+
+.NameColGridViewBuyBasket
+{
+    width: 37%;
+}
+
+.PriceColGridViewBuyBasket
+{
+    width: 15%;
+}
+
+.CountColGridViewBuyBasket
+{
+    width: 10%;
+}
+
+.EntiretyColGridViewBuyBasket
+{
+    width: 20%;
+}
+
+.headerGridViewBuyBasket
+{
+    background-color: rgb(62,62,62);
+    color: White;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footerGridViewBuyBasket
+{
+    background-color: rgb(229,237,239);
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+.rowGridViewBuyBasket
+{
+    /*border-right:2px solid gray;     border-left:2px solid gray;*/
+    padding: 4px 6px 5px 6px;
+    width: auto;
+    text-align: center;
+    font-size: 11px;
+    margin: 0px;
+}
+
+.endRowGridViewBuyBasket
+{
+    background: rgb(52,52,52);
+    color: White;
+}
+
+.rowGridViewBuyBasket01
+{
+    background-color: rgb(215,215,215);
+}
+
+.cntGridViewBuyBasket
+{
+    background-color: White;
+}
+
+.imgDeleteGridViewBuyBasket
+{
+    cursor: pointer;
+}
+
+.imgBuyBasket
+{
+    width: 40px;
+}
+
+.divImgBuyBasket
+{
+    cursor: pointer;
+    position: fixed;
+    right: 5px;
+    top: 300px;
+}
+
+.btnRegBuyBasket
+{
+    font-weight: bold;
+}
+
+.rowUserDeleteBuyBasket
+{
+    cursor: pointer;
+    padding: 4px auto 6px 15px;
+}
+
+.rowUserDeleteHoverBuyBasket
+{
+    background-color: rgb(52,52,52);
+    color: White;
+    font-size: 12px;
+}
+
+
+/*>>>>>>>>>    ActiveUser User Control    <<<<<<<<<<<<*/
+.bodyActiveUserUC01
+{
+    overflow:hidden;
+}
+
+.bodyActiveUserUC02
+{
+    position:relative;
+    top:0px;
+    left:0px;
+    overflow:hidden;
+    float:left;
+    /*padding:0px 2px 10px 0px;*/
+}
+
+.imgActiveUserUC
+{
+    float:left;
+    margin:0px 0px 0px -5px;
+}
+
+.cntActiveUserUC
+{
+    float:left;
+    margin:0px auto 0px 2px;
+    
+}
+
+.regUserDivActiveUserUC
+{
+    margin:23px auto -15px 0px;
+    
+    
+}
+
+.pnlLoginActiveUserUC
+{
+    margin:0px auto 0px 0px;
+    text-align:left;
+    float:left;
+}
+
+.divImgUserActiveUser
+{
+    border:1px solid #bebebe;
+    padding:2px 2px 2px 2px;
+    margin:15px 0px 0px 0px;
+    float:left;
+    width:56px;
+    height:56px;
+}
+
+.imgUserActiveUser
+{
+    width:56px;
+    height:56px;
+    margin:0px 0px 0px 0px;
+}
+
+.infoActiveUser
+{
+    float:left;
+    margin:0px 0px 0px 4px;
+    font-size:10px;
+    
+}
+
+.nameActiveUser
+{
+    margin:40px 0px 0px 0px;
+    font-weight:bold;
+    float:left;
+}
+
+.twinkleActiveUser
+{
+    width:8px;
+    height:8px;
+    background-color:#83ad00;
+    margin:43px auto 0px 5px;
+    float:left;
+}
+
+.lnksActiveUser
+{
+    margin:63px 0px 0px 1px;
+}
+
+.lnksActiveUserUC
+{
+    font-size:11px;
+}
+
+.lnksActiveUserUC:hover
+{
+    color:#212c34;
+    font-weight:bold;
+}
+
+.navarToggleActiveUser
+{
+    /*position:absolute;
+    left:0px;
+    bottom:0px;
+    right:0px;*/
+    background-image:url('image/topActiveUserUC.png');
+    background-position:center;
+    background-repeat:no-repeat;
+    float:left;
+    margin:2px 0px 0px 0px;
+    padding:0px 2px 0px 0px;
+    width:100%;
+    height:10px;
+    cursor:pointer;
+}
+
+*.navarToggleActiveUser:hover
+{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    /*background-color:#005486;*/
+}
+
+
+
+
+/*>>>>>>>>>    FactorIssuance Page    <<<<<<<<<<<<*/
+.bodyFactorIssuance
+{
+    margin: 0px auto 0px auto;
+}
+
+
+/*>>>>>>>>>    FactorIssuance User Control    <<<<<<<<<<<<*/
+.pnlBodyUserInsertUpdateUC
+{
+    font-size:12px;
+}
+
+.rowBtnUserInsertUpdateUC
+{
+    margin:20px 0px 20px auto;
+}
+
+.rowImgUserInsertUpdateUC
+{
+    padding:10px 10px 10px 10px;
+    width:auto;
+    border:1px dotted gray;
+}
+
+/*>>>>>>>>>    FactorIssuance User Control    <<<<<<<<<<<<*/
+.bodyFactorIssuanceUC
+{
+    
+}
+
+
+/*>>>>>>>>>    Time User Control    <<<<<<<<<<<<*/
+
+.Time-Date
+{
+    direction: ltr;
+    text-align: center;
+    width: 80px;
+}
+
+
+/*>>>>>>>>>    Online Pay User Control     <<<<<<<<<<<<*/
+.pnlBodyOnlinePayUC
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 300;
+    text-align: right;
+    overflow: hidden;
+    
+    display: none;
+    visibility:hidden;
+}
+
+.pnlBodyVisibleOnlinePayUC
+{
+    display: block;
+    visibility:visible;
+}
+
+.divOprationOnlinePayUC
+{
+    font-size:12px;
+    margin:5px auto 5px auto;
+}
+
+.divOPOnlinePayUC
+{
+    background-color: #caff26;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+.banksOnlinePayUC
+{
+    margin:20px auto -10px auto;
+}
+
+.txtAmountOnlinePayUC
+{
+    font-weight:bold; 
+    font-size:16px;
+    text-align:center;
+}
+
+/*>>>>>>>>>    Factor Pursue User Control     <<<<<<<<<<<<*/
+.pnlBodyFactorPursue
+{
+    display: none;
+}
+
+.imgbtnHomePageFactorPursueUC
+{
+    margin:0px 0px 30px auto;
+}
+
+.divGridViewFactorPursue
+{
+    margin: 5px auto 5px auto;
+    
+}
+
+.pnlBodyFactorPursueVisible
+{
+    display: block;
+    visibility: visible;
+}
+
+.aimgbtnFactorPursue
+{
+    position:fixed;
+    left:0px;
+    top:158px;
+    z-index:300;
+    cursor:pointer;
+}
+
+.imgbtnFactorPursue
+{
+    width: 40px;
+}
+
+/*>>>>>>>>>    FactorPursue.htm     <<<<<<<<<<<<*/
+.bodyFactorPursue
+{
+    font-size:12px;
+}
+
+
+/*>>>>>>>>>    FactorIssuance.htm     <<<<<<<<<<<<*/
+.bodyAddressIssuanceHtm
+{
+    width: 538px;
+    padding: 15px 15px 15px 15px;
+    border: 3px double gray;
+    font-family: Tahoma;
+    font-size: 12px;
+    direction: rtl;
+    margin: 0px auto 20px auto;
+}
+
+.recipientAddressIssuanceHtm
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.postCodeAddressIssuanceHtm
+{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto 10px auto;
+}
+
+
+
+
+
+
+
+
+
+/*>>>>>>>>>    FactorIssuance.htm     <<<<<<<<<<<<*/
+.BodyFactorIssuanceHtml
+{
+    width: 538px;
+    min-height: 785px;
+    padding: 43px 43px 43px 43px;
+    border: 1px solid gray;
+    font-family: Tahoma;
+    font-size: 12px;
+    direction: rtl;
+    margin: 0px auto 20px auto;
+}
+
+.headerFactorIssuanceHtml
+{
+    overflow: hidden;
+    width: 100%;
+    direction: ltr;
+}
+
+.logoCompanyFactorIssuanceHtml
+{
+    float: right;
+    margin: 15px 0px 0px auto;
+}
+
+.imgLogoCompanyFactorIssuanceHtml
+{
+    width: 246px;
+}
+
+.imgLogoFactorIssuanceHtml
+{
+    width: 146px;
+}
+
+.logoFactorIssuanceHtml
+{
+    float: left;
+}
+
+.InfoFactorIssuanceHtml
+{
+    margin: 10px 20px 10px 0px;
+    padding: 30px 20px 10px 0px;
+    border-right: 1px dotted gray;
+}
+
+.buyerFactorIssuanceHtml
+{
+    font-size: 14px;
+}
+
+.gridViewFactorIssuanceHtml
+{
+    margin: 10px 0px 0px 0px;
+    
+    overflow: hidden;
+    height: 100%;
+    
+}
+
+.signatureFactorIssuanceHtml
+{
+    float: left;
+    margin: 60px 0px 0px 30px;
+}
+
+.imgSignatureFactorIssuanceHtml
+{
+    width: 120px;
+}
+
+
+
+
+
+/*>>>>>>>>>    Search UC     <<<<<<<<<<<<*/
+.txtSearchUC
+{
+    border:1px solid gray;
+    padding:1px 5px 2px 5px;
+}
+
+

@@ -1,0 +1,5 @@
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\DataAccessLayer\bin\DataAccessLayer.dll
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\DataAccessLayer\bin\DataAccessLayer.pdb
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+F:\for_teaching\programming with compilers\((.net))\Web\ASP.net with C#\((my projects))\((((My Web Site - New Shell - 3 Tier))))\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache

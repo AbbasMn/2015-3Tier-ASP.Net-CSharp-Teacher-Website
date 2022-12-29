@@ -1,0 +1,1078 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MP.master.cs" Inherits="PresentationLayer.MP" %>
+
+<%--<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="Ajax" %>--%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+
+    <title>سایت شخصی عباس منتصری</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+<style>
+   blink { -webkit-animation: blink 1s steps(5, start) infinite; 
+         -moz-animation: blink 1s steps(5, start) infinite; 
+         -o-animation: blink 1s steps(5, start) infinite; 
+         animation: blink 1s steps(5, start) infinite; }
+
+          @-webkit-keyframes  blink { to { visibility: hidden; } }
+           @-moz-keyframes blink { to { visibility: hidden; } } 
+           @-o-keyframes blink { to { visibility: hidden; } } 
+           @keyframes blink { to { visibility: hidden; } }
+           }
+
+  </style>
+
+    <link rel="Stylesheet" type="text/css" href="Css/StyleMP.css" />
+
+
+
+
+</head>
+
+<body>
+
+    <form id="MP" runat="server">
+
+
+    <%--<!-- --------------Ajax -------------- -->
+
+       <Ajax:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+       </Ajax:ToolkitScriptManager>
+
+
+    
+    <Ajax:alwaysvisiblecontrolextender ID="alwaysvisiblecontrolextenderMessage" runat="server"
+    TargetControlID="Image1" ScrollEffectDuration="1" UseAnimation="false"/>
+
+        <asp:Image ID="Image1" runat="server" Height="131px" ImageUrl="Pic/Ajax/MessageSend.png" 
+            Width="38px" />
+
+    <Ajax:alwaysvisiblecontrolextender ID="alwaysvisiblecontrolextenderRegister" runat="server"
+    TargetControlID="Image2" ScrollEffectDuration="1" UseAnimation="false"/>
+
+        <asp:Image ID="Image2" runat="server" Height="131px" ImageUrl="Pic/Ajax/BuyBasket.png" 
+            Width="38px" />
+
+    <Ajax:alwaysvisiblecontrolextender ID="alwaysvisiblecontrolextenderWebDesign" runat="server"
+    TargetControlID="Image3" ScrollEffectDuration="1" UseAnimation="false"/>
+
+        <asp:Image ID="Image3" runat="server" Height="131px" ImageUrl="Pic/Ajax/MessageSend.png" 
+            Width="38px" /> 
+            
+ <Ajax:AnimationExtender ID="AnimationExtender1" runat="server" TargetControlID="Image1">
+            <Animations>
+                <OnMouseOver>
+                    <Sequence AnimationTarget="Image1">
+                        
+                        <Parallel Duration=".1" Fps="50">
+
+                            <Resize Width="42" Height="137" Unit="px" />
+                            
+                        </Parallel>
+                    </Sequence>
+                </OnMouseOver>
+
+                <OnMouseOut>
+                    <Sequence AnimationTarget="Image1">
+                        <Parallel Duration=".1" Fps="50">
+                            <Resize Width="40px" Height="135" Unit="px" />  
+                        </Parallel>                      
+                    </Sequence>
+                </OnMouseOut>
+            </Animations>
+        </Ajax:AnimationExtender>
+
+<Ajax:AnimationExtender ID="AnimationExtender2" runat="server" TargetControlID="Image2">
+            <Animations>
+                <OnMouseOver>
+                    <Sequence AnimationTarget="Image2">
+                        
+                        <Parallel Duration=".1" Fps="50">
+
+                            <Resize Width="42" Height="137" Unit="px" />
+                            
+                        </Parallel>
+                    </Sequence>
+                </OnMouseOver>
+
+                <OnMouseOut>
+                    <Sequence AnimationTarget="Image2">
+                        <Parallel Duration=".1" Fps="50">
+                            <Resize Width="40px" Height="135" Unit="px" />  
+                        </Parallel>                      
+                    </Sequence>
+                </OnMouseOut>
+            </Animations>
+        </Ajax:AnimationExtender>
+
+<Ajax:AnimationExtender ID="AnimationExtender3" runat="server" TargetControlID="Image3">
+            <Animations>
+                <OnMouseOver>
+                    <Sequence AnimationTarget="Image3">
+                        
+                        <Parallel Duration=".1" Fps="50">
+
+                            <Resize Width="42" Height="137" Unit="px" />
+                            
+                        </Parallel>
+                    </Sequence>
+                </OnMouseOver>
+
+                <OnMouseOut>
+                    <Sequence AnimationTarget="Image3">
+                        <Parallel Duration=".1" Fps="50">
+                            <Resize Width="40px" Height="135" Unit="px" />  
+                        </Parallel>                      
+                    </Sequence>
+                </OnMouseOut>
+            </Animations>
+        </Ajax:AnimationExtender>
+        
+<!-- --------------Ajax -------------- -->
+--%>
+                     
+    <div class="container">
+
+
+
+     <div class="inner_wrap row">
+
+<!----------------Header--------------------->  
+       <div id="header">
+         <div class="logo">
+            <ul>
+              <li><img src="Pic/MyHeaderLogo.png" title="montaseri.ir" </li>
+                      
+                      
+            </ul>
+          </div><!--logo-->
+          
+          <%--<div class="top-right">
+            <div class="search-top">
+              <ul>
+
+                <li><a class="search" href="#">جستجو</a></li>
+
+                <li><input name="txt" value="جستجو..." onfocus="if(this.value=='جستجو...'){this.value='';}" onblur="if(this.value=='') {this.value='جستجو...';}" type="text" />
+                </li>
+              </ul>
+           </div><!--search-top-->
+         </div>--%><!--top-right-->        
+</div>
+<!--header-->
+<!----------------/Header--------------------->
+ 
+      <div class="clear"></div><!--clear-->
+
+<div class="news_updates">
+
+  <span class="news_update">سخنان بزرگان</span>
+
+      <div class="my_text">
+
+<script type="text/javascript" language="javascript">
+
+    loveText = new Array();
+
+    loveText[0] = 'وقتی بعلاوه خداباشی،منهای هرچیزی میتونی زندگی کنی...';
+
+    loveText[1] = 'خداوندا از ما زمینیان خاکی نشین امتحاناتی مگیر که نتوانیم از آنها سربلند بیرون آییم...';
+
+    loveText[2] = 'آنهایـی کـه حـرف بـرای گـفـتن کـم دارنـد درد بـرای گـفتـن زیـاد دارند...';
+
+    loveText[3] = 'آنگاه که از همه رانده شدی به ما پناه ببر...قرآن کریم';
+
+    loveText[4] = 'کسی که به پشتکار خود اعتماد دارد ارزشی برای شانس قائل نیست...';
+
+    loveText[5] = 'پست ترین انسان ها کسی است که راز دوران دوستی را به وقت دشمنی فاش کند...';
+
+    loveText[6] = 'بدترین گناه آن است که به کسی که تو را راستگو میشناسد دروغ بگویی...';
+
+    loveText[7] = 'دشمنان خود را دوست داشته باش دیوانه شان میکند...لی دی';
+
+    loveText[8] = 'همیشه به خاطر داشته باشید که دنیا هرگز مدیون شما نیست ، زیرا قبل از شما نیز وجود داشته است . جان استیل';
+
+    loveText[9] = 'وقتی که شما به بدبینی عادت کنید ، بدبینی به اندازه خوشبینی مطلوب و دوست داشتنی است . آرنالد بنت';
+
+    loveText[10] = 'زیبایی غیر از اینکه نعمت خداست. دام شیطان نیز هست . فردریش نیچه ';
+
+    loveText[11] = 'خوشا به حال پیمان منشانی که وجودشان به پیرایه پاکی و شرم آراسته شده . بزرگمهر';
+
+    loveText[12] = 'حیات آدمی در دنیا همچون حبابی است در سطح دریا . جان راسکن ';
+
+    loveText[13] = 'در طوفان زندگی ، با خدا بودن بهتر از ناخدا بودن است !!!';
+
+    loveText[14] = 'رشد آدمیان تنها زمانی پایدار خواهد بود که بر اساس شایستگی ها و توانایی آنها باشد . ارد بزرگ';
+
+    loveText[15] = 'برای تلفظ کوتاهترین کلمه "بله" یا "نه" خیلی بیشتر از یک نطق باید فکر کرد . پتیاگور';
+
+    loveText[16] = 'اگر پنداری توان پیش بردن ما را نداشته باشد همان به که زودتر رهایش کنیم . ارد بزرگ';
+
+    loveText[17] = 'آفتاب به گیاهی حرارت می دهد که سر از خاک بیرون آورده باشد...کوروش کبیر';
+
+    loveText[18] = 'اگر کمی چیزهای غیر لازم را بدانی بهتر از این است که هیچ ندانی . سندکا';
+
+    loveText[19] = 'با گریه به دنیا می آیی اما چنان زندگی کن که با خنده از دنیا بروی . سرنگ';
+
+    loveText[20] = 'شادی و امید روان آدمی را می پرورد گر چه تن رنجور و زخمی باشد . ارد بزرگ';
+
+    loveText[21] = 'پیران فریبکار، آتش زندگی جوانانند . ارد بزرگ';
+
+    loveText[22] = 'کسی که به آبادانی می کوشد جهان از او به نیکی یاد می کند . فردوسی خردمند';
+
+    loveText[23] = 'دوست داشتن کسی که سزاوار دوستی نیست ، اسراف در محبت است !!!';
+
+    loveText[24] = 'بدبخت کسی است که نمی تواند ناراستی خویش را درست کند . ارد بزرگ';
+
+    loveText[25] = 'صاحبان اخلاق، روح جامعه خود هستند. امرسون ';
+
+    loveText[26] = 'خنده، بهترین روح جنگ با زندگی است. آناتول فرانس';
+
+    loveText[27] = 'میانه روی و اندازه نگه داشتن کمال طبیعت آدمی است. کنفسیوس';
+
+    loveText[28] = 'دنیا به امید برپاست و انسان به امید زنده. علی اکبر دهخدا ';
+
+    loveText[29] = 'مرد نیک، صدای وجدان را می شنود .ضرب المثل اسپانیایی';
+
+    loveText[30] = 'پول بتی است که همه او را می پرستند ولی این بت معبد ندارد . روتشیند';
+
+    r = Math.floor(Math.random() * loveText.length);
+    document.write(loveText[r]);
+ </script>
+
+</div>
+
+<div style="overflow: hidden">
+<table  align="left" width="455px">
+                        <tr>
+                            <td width="30%" valign="top" align="left">
+                       <blink>
+                                            <asp:LinkButton CssClass="LinkButtonMy" ID="lblStudentRegistration" runat="server"
+                                                    CausesValidation="false" OnClick="btnStudentRegistration_Click"> عضويت در سايت 
+                                                    
+                                                    </asp:LinkButton>
+                                                    
+                        </blink>
+                                <asp:LinkButton CssClass="LinkButtonMy" ID="lbtLogOut" runat="server" CausesValidation="false"
+                    onclick="lbtnLogOut_Click">(LogOut) خروج</asp:LinkButton>
+
+                        <asp:Label ID="lbl2" runat="server" Text="/"></asp:Label><asp:LinkButton CssClass="LinkButtonMy" ID="btnControlPanel" runat="server" CausesValidation="false"
+                    onclick="btnControlPanel_Click">(Control Pannel) کنترل پانل</asp:LinkButton><asp:Label 
+                                    ID="lbl3" runat="server" Text="/"></asp:Label><asp:LinkButton CssClass="LinkButtonMy" ID="lbtnLogMainPage" runat="server" CausesValidation="false" onclick="lbtnLogMainPage_Click"
+                    >(Home) صفحه اصلي</asp:LinkButton>&nbsp;<asp:Label ID="lbl1" runat="server" Text="/"></asp:Label><asp:LinkButton CssClass="LinkButtonMy" ID="lbtnLogIn" runat="server" CausesValidation="false"
+                            OnClick="lbtnLogIn_Click">(LogIn) ورود</asp:LinkButton>&nbsp;
+                            </td>
+
+                        </tr>
+                     </table>
+</div>
+
+
+  </div> 
+       
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"> 
+   
+  </asp:ContentPlaceHolder> 
+
+     <div class="clear"></div><!--clear-->
+       
+<!----------------Contents---------------------> 
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+      
+</asp:ContentPlaceHolder>
+
+
+<!----------------Footer-container--------------------->  
+   <div id="footer" class="container">
+    <div class="footer_inner row clearfix">
+      <!-- BEGIN .widget-section -->
+                    <div class="grid_four neutral"> 
+                        <div class="widget widget_text">
+                            <h4 class="widget-title"><strong>آدرسهای الکترونیکی</strong></h4>			
+                            <div class="textwidget" style="text-align:right; margin-top:9px;font-size:11pt;">
+                           
+                                 
+  <strong><img src="Pic/gmail.png" alt="Gmail" width="24" height="24" /> 
+	Gmail :</strong> s.abas.montaseri@gmail.com    
+  <br />
+
+  <strong><img src="Pic/edu.png" alt="MSN" width="24" height="24" /> 
+	Edu :</strong> Montaseri@biau.ac.ir       
+    
+  <br />
+
+  <strong><img src="Pic/info.png" alt="MSN" width="24" height="24" /> 
+	Info :</strong> info@montaseri.ir  
+
+                            </div><!--textwidget-->
+                        </div><!--widget-->
+                    </div><!-- END .grid_four -->
+                       
+                    <!-- BEGIN .widget-section -->
+                    <div class="grid_four"> 
+                  <div class="widget widget_categories" >
+                   <h4 class="widget-title" ><strong>آدرس</strong></h4>	
+                   <div class="textwidget" style="text-align:right; margin-top:-5px; font-size:10pt;">	
+                    <br/>شیراز - بیضا - دانشگاه آزاد واحد بیضا - بخش کامپیوتر
+                     <br/>همراه :  ۰۹۳۶۱۰۶۷۷۳۶
+                     <br/>تلفن : ۷۶۲۳۲۵۷-۰۷۱۲
+                    </div> 
+                  </div><!--widget--> 
+                    </div><!-- END .grid_four -->   
+                    
+                    <!-- BEGIN .widget-section -->
+                    <div class="grid_four">
+        
+                        <div class="widget Flickr_widget">
+                            <h4 class="widget-title"><strong>اشتراک گذاری</strong></h4>
+                             <div class="social-icons" style="margin-left:32px;">
+    <ul>
+       <li><a href="http://wwww.facebook.com"><img src="Pic/facebook.png" title="Facebook" alt="" /></a></li>
+       <li><a href="http://wwww.google.com"><img src="Pic/googleplus.png" title="Google+" alt="" /></a></li>
+       <li><a href="http://wwww.gmail.com"><img src="Pic/gmail.png" title="Gmail" alt="" /></a></li>
+
+       <li><a href="http://wwww.twitter.com"><img src="Pic/twitter.png" title="twitter" alt="" /></a></li>        
+    </ul>
+
+
+
+  </div>
+                        </div><!--widget-->
+                    </div><!-- END .grid_four -->  
+                     
+                </div>
+                
+    <div class="footer_inner attribution clearfix row" style="margin-top:-15px;">
+      <p class="copyright"> کلیه حقوق مادی و معنوی این سایت متعلق به 
+          <a href="http://www.montaseri.ir" title="مهندس عباس منتصری" 
+              style="color: #FFFFFF; text-decoration: underline;">مهندس عباس منتصری</a> می باشد </p>
+      <p class="copyright">Montaseri.ir © CopyRight 2013 - All Right Reserved</p>
+    </div>                
+   </div><!--footer_inner row clearfix-->
+</div><!--inner_wrap row-->
+
+
+<!----------------Footer--------------------->   
+  <%--<div id="footer_bottom" class="container">
+    <div class="footer_inner attribution clearfix row">
+      <p class="copyright"> کلیه حقوق مادی و معنوی این سایت متعلق به 
+          <a href="http://www.montaseri.ir" title="مهندس عباس منتصری" 
+              style="color: #FFFFFF; text-decoration: underline;">مهندس عباس منتصری</a> می باشد </p>
+      <p class="copyright">Montaseri.ir © CopyRight 2013-All right reserved</p>
+    </div> <!--attribution-->
+  </div>--%> <!--Footer_bottom-->
+<div class="top_scroll"><a style="display: none;" href="#top">↑</a></div>
+</div>
+
+<!--container-->
+
+
+
+
+<%--
+
+
+<div class="cphRightMenu">
+        <script src="dabghan/MessageSendUC.js" type="text/javascript"></script>
+        <script src="dabghan/MessageSendUC.js" type="text/javascript"></script>
+        
+<link href="dabghan/StyleSheet.css" rel="stylesheet" type="text/css">
+
+<div class="bodyMessageSendUC">
+    <div class="cnt-MessageSendUC">
+        
+        <div class="middelPanel-MessageSendUC">
+            <div class="rowTableDiv">
+                <div class="colTableDiv title-MessageSendUC">
+                    ارسال پیام برای مدیر سایت</div>
+            </div>
+            <div class="rowTableDiv">
+                <div class="colTableDiv col01-MessageSendUC">
+                    نام :</div>
+                <div class="colTableDiv">
+                    <input class="textBox textBox-MessageSendUC txtName-MessageSendUC" type="text">
+                    <span class="lblError">*</span>
+                </div>
+            </div>
+            <div class="rowTableDiv">
+                <div class="colTableDiv col01-MessageSendUC">
+                    ایمیل :</div>
+                <div class="colTableDiv">
+                    <input class="textBox textBox-MessageSendUC txtEmail-MessageSendUC textBoxLTR" type="text">
+                </div>
+            </div>
+            <div class="rowTableDiv">
+                <div class="colTableDiv col01-MessageSendUC">
+                    پیام :</div>
+                <div class="colTableDiv">
+                    <textarea class="textBox textBox-MessageSendUC txtMsg-MessageSendUC" cols="40" rows="8"></textarea>
+                    <span class="lblError">*</span>
+                </div>
+            </div>
+            <div class="rowTableDiv">
+                <div class="colTableDiv col01-MessageSendUC">
+                    &nbsp;</div>
+                <div class="colTableDiv">
+                    <input class="btn grayBtn grayText btnSendMessageSendUC" style="" type="button" value="ارسال">
+                    <input class="btn grayBtn grayText btnCancelMessageSendUC" type="button" value="بستن">
+                </div>
+            </div>
+            <div class="rowTableDiv">
+                <div class="colTableDiv col01-MessageSendUC">
+                    &nbsp;</div>
+                <div class="colTableDiv">
+                    <div class="waitNewsView wait-MessageSendUC" style="display: none;">
+                        
+
+<div class="waiting">
+<div>
+<img id="MessageSend_WaitingMessageSendUC_imgWait" src="dabghan/waiting.gif" alt="صبر کنید Waiting">
+
+<span class="" style="">
+درحال انجام عملیات...
+</span>
+</div>
+</div>
+                    </div>
+                    <script type="text/javascript">
+                        $('.wait-MessageSendUC').fadeOut(0);
+                    </script>
+                    <div class="lblError divError-MessageSendUC">
+                        <span class="error-MessageSendUC"></span>
+                    </div>
+                    <div class="lblSuccess divSuccess-MessageSendUC">
+                        <script type="text/javascript">
+                            $('.DivSuccess-MessageSendUC').fadeOut(0);
+                        </script>
+                        <span class="lblSuccess-MessageSendUC"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="divImgMessageSend">
+        <img src="dabghan/MessageSend.png" id="MessageSend_imgMessageSend" class="img-MessageSendUC" alt="ارسال پیام" style="width: 40px; display: inline;">
+    </div>
+</div>
+<script type="text/javascript">
+
+    
+
+</script>
+
+        
+
+    </div>
+    
+
+<link href="dabghan/StyleSheet.css" rel="stylesheet" type="text/css">
+<script src="dabghan/CookieFunctions.js" type="text/javascript"></script>
+<script src="dabghan/CookieFunctions.js" type="text/javascript"></script>
+<script type="text/javascript" src="dabghan/BuyBasket.js"></script>
+<script type="text/javascript" src="dabghan/BuyBasket.js"></script>
+<script src="dabghan/Public.js" type="text/javascript"></script>
+<script src="dabghan/Public.js" type="text/javascript"></script>
+<script src="dabghan/jquery.corner.js" type="text/javascript"></script>
+<script src="dabghan/jquery.corner.js" type="text/javascript"></script>
+
+<div class="bodyBuyBasket" style="display: none;">
+    <script type="text/javascript">
+        $('.bodyBuyBasket').fadeOut(0);
+
+    </script>
+    <div class="cntBodyBuyBasket">
+        <div class="cntBuyBasket">
+            <div class="headerBuyBasket panelsBuyBasket">
+                <div class="corner cornerTop">
+                </div>
+                <div class="rowTableDiv">
+                    <div class="colTableDiv colTableDiv01BuyBasket colTableDiv01BuyBasket02">
+                        <img src="dabghan/close.png" id="BuyBasket_imgClose" class="imgCloseBuyBasket imgClose" alt="بستن">
+                    </div>
+                    <div class="colTableDiv colTableDiv02BuyBasket">
+                        <img src="dabghan/shopping_cart48.png" id="BuyBasket_img1" alt="اطلاعات سبد خرید">
+                    </div>
+                    <div class="colTableDiv">
+                        <div class="titleBuyBasket divTitleBuyBasket">
+                            سبد خرید
+                        </div>
+                        <div class="divTitleBuyBasket">
+                            مدیریت کالاهای خریداری شده شما
+                        </div>
+                    </div>
+                    <div class="colTableDiv divHeaderEntiretyBuyBasket">
+                        | جمع مبلغ خرید شما: <span class="headerEntiretyBuyBasket getEntiretyBuyBasket">0</span>
+                        تومان |
+                    </div>
+                </div>
+            </div>
+            <div id="BuyBasket_HtmlTempGridViewBuyBasket" class="divHidden HtmlGridViewBuyBasket">
+
+    <div class="rowTableDiv rowGridViewBuyBasket ##rowClass##">
+        <div class="divHidden IDColGridViewBuyBasket">
+            ##id##
+        </div>
+        <div class="colTableDiv TaskColGridViewBuyBasket">
+            ##TaskCol##
+        </div>
+
+        <div class="colTableDiv NameColGridViewBuyBasket">
+            ##NameCol##
+        </div>
+
+        <div class="colTableDiv PriceColGridViewBuyBasket">
+            ##PriceCol##
+        </div>
+
+        <div class="colTableDiv CountColGridViewBuyBasket">
+            ##CountCol##
+        </div>
+        
+        <div class="colTableDiv EntiretyColGridViewBuyBasket ##colEntiretyClass##">
+            ##EntiretyCol##
+        </div>
+    </div>
+
+</div>
+            
+            <div class="divGridViewBuyBasket panelsBuyBasket">
+                <div style="margin: 0px auto 0px auto;">
+                    <div id="BuyBasket_headerGridViewBuyBasket">
+
+    <div class="rowTableDiv rowGridViewBuyBasket headerGridViewBuyBasket">
+        <div class="divHidden IDColGridViewBuyBasket">
+            ##id##
+        </div>
+        <div class="colTableDiv TaskColGridViewBuyBasket">
+            عملیات
+        </div>
+
+        <div class="colTableDiv NameColGridViewBuyBasket">
+            نام
+        </div>
+
+        <div class="colTableDiv PriceColGridViewBuyBasket">
+            قیمت
+        </div>
+
+        <div class="colTableDiv CountColGridViewBuyBasket">
+            تعداد
+        </div>
+        
+        <div class="colTableDiv EntiretyColGridViewBuyBasket ##colEntiretyClass##">
+            جمع (تومان)
+        </div>
+    </div>
+
+</div>
+                    <div class="cntGridViewBuyBasket">
+                    </div>
+                    <div id="BuyBasket_footerGridViewBuyBasket" class="footerGridViewBuyBasket">
+
+    <div class="rowTableDiv rowGridViewBuyBasket footerGridViewBuyBasket">
+        <div class="divHidden IDColGridViewBuyBasket">
+            ##id##
+        </div>
+        <div class="colTableDiv TaskColGridViewBuyBasket">
+            &nbsp;
+        </div>
+
+        <div class="colTableDiv NameColGridViewBuyBasket">
+            &nbsp;
+        </div>
+
+        <div class="colTableDiv PriceColGridViewBuyBasket">
+            جمع کل:
+        </div>
+
+        <div class="colTableDiv CountColGridViewBuyBasket">
+            &nbsp;
+        </div>
+        
+        <div class="colTableDiv EntiretyColGridViewBuyBasket getEntiretyBuyBasket">
+            <span class="entiretyGridViewBuyBasket">0</span>
+        </div>
+    </div>
+
+</div>
+                </div>
+                <br>
+                <div class="rowTableDiv" style="text-align: left; font-weight: bold; margin: 2px auto 10px auto;">
+                    تمام مبالغ به تومان میباشد
+                </div>
+
+                <div class="rowTableDiv" style="text-align: left; font-weight: bold; margin: 5px auto 10px auto;">
+                جهت انجام سفارش نهایی بر روی دکمه «ثبت نهایی سبد خرید» کلیک کنید
+                </div>
+
+                <div class="rowTableDiv">
+                    <div class="colTableDiv">
+                        &nbsp;
+                    </div>
+                    <div class="colTableDiv divBtnRegBuyBasket">
+                        <input id="btnRegBuyBasket" class="btn grayBtn grayText btnBig btnRegBuyBasket" type="button" value="ثبت نهایی سبد خرید">
+                    </div>
+                </div>
+                <div class="rowTableDiv">
+                    <div class="colTableDiv" style="text-align: center; width: 100%; margin: 10px auto 0px auto;
+                        font-size: 12px;">
+                        <div class="lblError divErrorMessage">
+                        </div>
+                        <div class="lblSuccess divSuccessMessage" style="font-size: 12px; font-weight: bold;">
+                        </div>
+                        <div id="BuyBasket_WaitingHeaderBuyBasket"><div class="divWaitingMessage" style="display: none;">
+    <img class="imgWait" src="dabghan/waiting.gif" alt="صبر کنید Waiting">
+    <span class="" style="font-size: 10px;">درحال انجام عملیات... </span>
+    <script type="text/javascript">
+        setSrcimgWait();
+    </script>
+</div>
+</div>
+                        <script type="text/javascript">
+                            $('.bodyBuyBasket').fadeIn(0);
+                            $('.divWaitingMessage').fadeOut(0);
+                            $('.bodyBuyBasket').fadeOut(0);
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+
+            <div class="footerBuyBasket panelsBuyBasket">
+                <div class="rowTableDiv">
+                    <div class="colTableDiv colTableDiv01BuyBasket colTableDiv01BuyBasket02">
+                        <img src="dabghan/close.png" id="BuyBasket_img2" class="imgCloseBuyBasket imgClose" alt="بستن">
+                    </div>
+                    <div class="colTableDiv colTableDiv02BuyBasket">
+                        <img src="dabghan/user48.png" id="BuyBasket_img3" alt="اطلاعات خریدار">
+                    </div>
+                    <div class="colTableDiv">
+                        <div class="titleBuyBasket divTitleBuyBasket">
+                            اطلاعات خریدار
+                        </div>
+                        <div class="divTitleBuyBasket">
+                            لطفا اطلاعات ذیل را جهت دریافت محصولات با دقت پر کنید
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="lblError" style="text-align: center;">
+                    <b>این اطلاعات صرفا جهت خرید شما بوده و کاملا محرمانه نزد ما باقی خواهد ماند. </b>
+                </div>
+                <br>
+                <br>
+                <div style="font-size: 12px;">
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            نام و نام خانوادگی:
+                        </div>
+                        <div class="colTableDiv">
+                            <input name="ctl00$BuyBasket$txtName" type="text" id="BuyBasket_txtName" class="textBox txtFooterBuyBasket txtName">
+                        </div>
+                        <div class="colTableDiv lblError">
+                            *
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            موبایل:
+                        </div>
+                        <div class="colTableDiv">
+                            <input name="ctl00$BuyBasket$txtMobile" type="text" id="BuyBasket_txtMobile" class="textBox txtFooterBuyBasket txtMobile">
+                        </div>
+                        <div class="colTableDiv lblError">
+                            *
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            تلفن:
+                        </div>
+                        <div class="colTableDiv">
+                            <input name="ctl00$BuyBasket$txtTel" type="text" id="BuyBasket_txtTel" class="textBox txtFooterBuyBasket txtTel">
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            ایمیل:
+                        </div>
+                        <div class="colTableDiv">
+                            <input name="ctl00$BuyBasket$txtEmail" type="text" id="BuyBasket_txtEmail" class="textBox txtFooterBuyBasket txtEmail">
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            استان:
+                        </div>
+                        <div class="colTableDiv">
+                            <input name="ctl00$BuyBasket$txtState" type="text" id="BuyBasket_txtState" class="textBox txtFooterBuyBasket txtState">
+                        </div>
+                        <div class="colTableDiv lblError">
+                            *
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            شهر:
+                        </div>
+                        <div class="colTableDiv">
+                            <input name="ctl00$BuyBasket$txtCity" type="text" id="BuyBasket_txtCity" class="textBox txtFooterBuyBasket txtCity">
+                        </div>
+                        <div class="colTableDiv lblError">
+                            *
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            آدرس:
+                        </div>
+                        <div class="colTableDiv">
+                            <textarea name="ctl00$BuyBasket$txtAddress" rows="6" cols="18" id="BuyBasket_txtAddress" class="textBox txtFooterBuyBasket txtAddress" style="width:200px;"></textarea>
+                        </div>
+                        <div class="colTableDiv lblError">
+                            *
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            کد پستی:
+                        </div>
+                        <div class="colTableDiv">
+                            <input name="ctl00$BuyBasket$txtPostCode" type="text" id="BuyBasket_txtPostCode" class="textBox txtFooterBuyBasket txtPostCode">
+                        </div>
+                        <div class="colTableDiv lblError">
+                            *
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            توضیحات:
+                        </div>
+                        <div class="colTableDiv">
+                            <textarea name="ctl00$BuyBasket$txtComment" rows="6" cols="18" id="BuyBasket_txtComment" class="textBox txtFooterBuyBasket txtComment" style="width:200px;"></textarea>
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            &nbsp;
+                        </div>
+                        <div class="colTableDiv">
+                            <input id="btnRegBuyerInfoBuyBasket" class="btn grayBtn grayText" type="button" value="ذخیره اطلاعات شما">
+                        </div>
+                    </div>
+                    <div class="rowTableDiv">
+                        <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                            &nbsp;
+                        </div>
+                        <div class="colTableDiv" style="width: 340px;">
+                            <div class="lblError divErrorMessage">
+                            </div>
+                            <div class="lblSuccess divSuccessMessage">
+                                <script type="text/javascript">
+                                    $('.divSuccessMessage').fadeOut(0);
+                                </script>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="rowTableDiv rowUserDeleteBuyBasket">
+                    <div class="colTableDiv colTableDiv01FooterBuyBasket">
+                    </div>
+                    <div class="colTableDiv" style="text-align: center;">
+                        <img src="dabghan/user_remove.png" id="BuyBasket_img4" alt="اطلاعات سبد خرید">
+                        <br>
+                        <p>
+                            در صورتی که از سیستمی غیر از سیستم خود جهت خرید استفاده میکنید، بر روی این گزینه
+                            کلیک کنید تا تمام اطلاعات شخصی شما از روی این سیستم پاک شود.
+                        </p>
+                        
+                    </div>
+
+
+                </div>
+                <div class="corner cornerBottom">
+                </div>
+            </div>
+            <div class="rowTableDiv">
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="blueBack bodyFullScreenSVHide bodyFullScreenSVShow blueFixedBuyBasket">
+    </div>
+</div>
+
+
+<div class="divImgBuyBasket">
+    <img src="dabghan/BuyBasket.png" id="BuyBasket_imgBuyBasket" class="imgBuyBasket" alt="سبد خرید" style="width: 40px; display: inline;">
+</div>
+
+    <a id="aimgbtnFactorPursue" class="aimgbtnFactorPursue" target="_blank">
+        <img src="dabghan/FactorPurse.png" id="imgbtnFactorPursue" class="noBorder imgbtnFactorPursue" alt="پیگیری خرید" style="width: 40px; display: inline;">
+    </a>
+    <div style="margin: 0px -8px -10px auto; font-size: 30px; text-align: right;">
+        <a href="http://www.dabbaghan.ir/Page/Admin/AdminHome.aspx" class="lnk">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </div>
+    <script src="dabghan/HeaderMP.js" type="text/javascript"></script>
+    <script src="dabghan/Public.js" type="text/javascript"></script>
+    <script src="dabghan/Public.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#openRss').click(openRss_click);
+            $('#regRss').click(regRss_click);
+            $('#CancelRss').click(openRss_click);
+
+            //state on or off rss Div
+            var stateRss = 'off';
+
+            // keypress in login
+            //            $('body').keydown(function (key) {
+            //                //if ((key.keyCode == 27) && (showFullScreen == true)) {
+            //                    
+            //                //}
+            //            });
+
+            //============== set focuse txtPass then keyPress is 'Enter' = 13
+            $('#nameRss').keypress(function (key) {
+                if (key.keyCode == 13) {
+                    $('#emailRss').focus();
+                    // delete event
+                    key.preventDefault();
+                }
+                // 27 is 'Esc'
+                else if (key.keyCode == 27) {
+                    openRss_click();
+                }
+            });
+
+            $('.rss').keypress(rss_keypress);
+
+            //============== keypress in body 
+            function rss_keypress(key) {
+                // if keypress is 'Enter' = 13
+                if (key.keyCode == 13) {
+                    regRss_click();
+                    // delete event
+                    key.preventDefault();
+                }
+            }
+
+            //============ mouse hover Image Name ME
+            $('.nameImg').hover(nameImg_hover);
+            function nameImg_hover() {
+
+            }
+
+            //============ click in regRss
+            function openRss_click() {
+                if (stateRss == 'off') {
+                    $('.rss').fadeIn();
+                    $('#RssWait').hide(0);
+                    stateRss = 'on';
+                    $('#nameRss').focus();
+                }
+                else {
+                    $('.rss').fadeOut();
+                    stateRss = 'off';
+                }
+            }
+
+
+            //============ click in regRss
+            function regRss_click() {
+                var objRss = new Object();
+                objRss.type = 'insertRss';
+                objRss.name = $('#nameRss').val();
+                objRss.email = $('#emailRss').val();
+
+                actionWaitRss('on');
+                actionErrorRss('off');
+
+                var urlStr = PathNavigator('Default.aspx');
+                //alert(urlStr);
+
+                $.ajax({
+                    type: "POST",
+                    url: urlStr,
+                    data: objRss,
+                    dataType: 'json',
+                    success: function (responseData) {
+                        //alert(msg);
+                        actionWaitRss('off');
+
+                        var objResponse = new Object();
+                        objResponse.id = '';
+                        objResponse.msg = '';
+                        objResponse.state = '';
+
+                        for (index in responseData) {
+                            objResponse.id = responseData[index].Id;
+                            objResponse.msg = responseData[index].Msg;
+                            objResponse.state = responseData[index].State;
+                        }
+
+                        //if state opration is true - '1'
+                        if (objResponse.state == '1') {
+                            //alert(spiltMsg[1]);
+                            $('#lblSuccessRss').html(objResponse.msg);
+                            actionSuccessRss('on');
+
+                            // if discretion is success Register
+                            // After show massage to user
+                            //Send Mail
+                            var objMailRss = new Object();
+                            objMailRss.type = "sendEmail";
+                            objMailRss.IdRss = objResponse.id;
+                            $.ajax({
+                                type: "POST",
+                                url: urlStr,
+                                data: objMailRss,
+                                success: function (responseData) {
+                                    //alert(msg);
+                                }
+                            });
+                        }
+                        else {
+                            $('#lblErrorInRss').html(objResponse.msg);
+                            actionErrorRss('on');
+                        }
+                        //$('#lblMsg').html(msg);
+                        //alert(msg);
+                    },
+
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        actionWaitRss('off');
+                        //alert('* خطا در سرور \n لطفا مجددا تلاش کنید.' + textStatus);
+                        $('#lblErrorInRss').html('* خطا در سرور \n لطفا مجددا تلاش کنید.' + textStatus);
+                        actionErrorRss('on');
+                    }
+                });
+
+            }
+
+
+
+            //============ on & off waiting div
+            function actionWaitRss(state) {
+                if (state == 'on') {
+                    //$('.waitNewsView').css({ 'width': '200px' });
+                    $('.rss').animate({ 'top': '-40px' });
+                    $('#RssWait').fadeIn();
+                }
+                else {
+                    $('#RssWait').fadeOut(0);
+                }
+            }
+
+            //============ on & off Success div
+            function actionSuccessRss(state) {
+                if (state == 'on') {
+                    $('.rss').fadeOut();
+                    $('#divlblSuccessRss').fadeIn().delay(6000).fadeOut();
+                }
+                else {
+                    $('#divlblSuccessRss').fadeOut();
+                }
+            }
+
+
+
+            //============ on & off Error div
+            function actionErrorRss(state) {
+                if (state == 'on') {
+                    $('.lblError').fadeIn();
+                }
+                else {
+                    $('.lblError').fadeOut(0);
+                }
+            }
+
+
+            $('.lnkHead').hover(lnkHead_hover);
+            //hover in menu
+            function lnkHead_hover() {
+                $(this).toggleClass('backHoverMenuH');
+            }
+
+        });
+    </script>
+    
+<script type="text/javascript">
+//<![CDATA[
+    var Page_Validators = new Array(document.getElementById("ActiveUser_Login_RFVtxtUserName"), document.getElementById("ActiveUser_Login_RFVtxtPass"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+    var ActiveUser_Login_RFVtxtUserName = document.all ? document.all["ActiveUser_Login_RFVtxtUserName"] : document.getElementById("ActiveUser_Login_RFVtxtUserName");
+    ActiveUser_Login_RFVtxtUserName.controltovalidate = "ActiveUser_Login_txtUserName";
+    ActiveUser_Login_RFVtxtUserName.focusOnError = "t";
+    ActiveUser_Login_RFVtxtUserName.errormessage = "*";
+    ActiveUser_Login_RFVtxtUserName.display = "Dynamic";
+    ActiveUser_Login_RFVtxtUserName.validationGroup = "loginUC1";
+    ActiveUser_Login_RFVtxtUserName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+    ActiveUser_Login_RFVtxtUserName.initialvalue = "";
+    var ActiveUser_Login_RFVtxtPass = document.all ? document.all["ActiveUser_Login_RFVtxtPass"] : document.getElementById("ActiveUser_Login_RFVtxtPass");
+    ActiveUser_Login_RFVtxtPass.controltovalidate = "ActiveUser_Login_txtPass";
+    ActiveUser_Login_RFVtxtPass.focusOnError = "t";
+    ActiveUser_Login_RFVtxtPass.errormessage = "*";
+    ActiveUser_Login_RFVtxtPass.display = "Dynamic";
+    ActiveUser_Login_RFVtxtPass.validationGroup = "loginUC1";
+    ActiveUser_Login_RFVtxtPass.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+    ActiveUser_Login_RFVtxtPass.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+    var Page_ValidationActive = false;
+    if (typeof (ValidatorOnLoad) == "function") {
+        ValidatorOnLoad();
+    }
+
+    function ValidatorOnSubmit() {
+        if (Page_ValidationActive) {
+            return ValidatorCommonOnSubmit();
+        }
+        else {
+            return true;
+        }
+    }
+
+    document.getElementById('ActiveUser_Login_RFVtxtUserName').dispose = function () {
+        Array.remove(Page_Validators, document.getElementById('ActiveUser_Login_RFVtxtUserName'));
+    }
+
+    document.getElementById('ActiveUser_Login_RFVtxtPass').dispose = function () {
+        Array.remove(Page_Validators, document.getElementById('ActiveUser_Login_RFVtxtPass'));
+    }
+    Sys.Application.add_init(function () {
+        $create(Sys.UI._UpdateProgress, { "associatedUpdatePanelId": null, "displayAfter": 500, "dynamicLayout": true }, null, null, $get("ActiveUser_Login_UpdateProgress1"));
+    });
+//]]>
+</script>
+--%>
+   
+    </form>
+</body>
+
+</html>

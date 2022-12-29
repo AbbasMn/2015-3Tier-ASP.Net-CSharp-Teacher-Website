@@ -1,0 +1,1177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E82ECC97-5375-48E4-BE9A-395B6EFC667C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <DesktopBuildPackageLocation>..\%28%28%28%28Published 3 Tierd%29%29%29%29\</DesktopBuildPackageLocation>
+    <PublishDatabases>false</PublishDatabases>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
+    <DesktopBuildPackageLocation>..\%28%28%28%28Published Final%29%29%29%29\</DesktopBuildPackageLocation>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>..\Bin\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Bin\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\Bin\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\Bin\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\Bin\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\Bin\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianDatePickup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BuisinessLogicLayer\BuisinessClasses\PersianDatePickup.dll</HintPath>
+    </Reference>
+    <Reference Include="RoyalMailSenderClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RoyalMailSenderClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.UI, Version=2010.1.415.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PresentationLayer\AddPicToPictureGallery.aspx.cs">
+      <DependentUpon>AddPicToPictureGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\AddPicToPictureGallery.aspx.designer.cs">
+      <DependentUpon>AddPicToPictureGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\AddPictureGallery.aspx.cs">
+      <DependentUpon>AddPictureGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\AddPictureGallery.aspx.designer.cs">
+      <DependentUpon>AddPictureGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AddDeleteBranch.aspx.cs">
+      <DependentUpon>AddDeleteBranch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AddDeleteBranch.aspx.designer.cs">
+      <DependentUpon>AddDeleteBranch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AddDeleteCourse.aspx.cs">
+      <DependentUpon>AddDeleteCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AddDeleteCourse.aspx.designer.cs">
+      <DependentUpon>AddDeleteCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AddDeleteUniversity.aspx.cs">
+      <DependentUpon>AddDeleteUniversity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AddDeleteUniversity.aspx.designer.cs">
+      <DependentUpon>AddDeleteUniversity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AddTermNumber.aspx.cs">
+      <DependentUpon>AddTermNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AddTermNumber.aspx.designer.cs">
+      <DependentUpon>AddTermNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminAddechnicalEducation.aspx.cs">
+      <DependentUpon>AdminAddechnicalEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminAddechnicalEducation.aspx.designer.cs">
+      <DependentUpon>AdminAddechnicalEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminControlPanelPage.aspx.cs">
+      <DependentUpon>AdminControlPanelPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminControlPanelPage.aspx.designer.cs">
+      <DependentUpon>AdminControlPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminEditNews.aspx.cs">
+      <DependentUpon>AdminEditNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminEditNews.aspx.designer.cs">
+      <DependentUpon>AdminEditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminInserNews.aspx.cs">
+      <DependentUpon>AdminInserNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminInserNews.aspx.designer.cs">
+      <DependentUpon>AdminInserNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminInsertLink.aspx.cs">
+      <DependentUpon>AdminInsertLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminInsertLink.aspx.designer.cs">
+      <DependentUpon>AdminInsertLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminPresentTechnicalEducation.aspx.cs">
+      <DependentUpon>AdminPresentTechnicalEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminPresentTechnicalEducation.aspx.designer.cs">
+      <DependentUpon>AdminPresentTechnicalEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminSelectStudentsForRecieveMessage.aspx.cs">
+      <DependentUpon>AdminSelectStudentsForRecieveMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminSelectStudentsForRecieveMessage.aspx.designer.cs">
+      <DependentUpon>AdminSelectStudentsForRecieveMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminSendResponseToStudent.aspx.cs">
+      <DependentUpon>AdminSendResponseToStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminSendResponseToStudent.aspx.designer.cs">
+      <DependentUpon>AdminSendResponseToStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminSetStudentPermission.aspx.cs">
+      <DependentUpon>AdminSetStudentPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminSetStudentPermission.aspx.designer.cs">
+      <DependentUpon>AdminSetStudentPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminSetStudentPermission2.aspx.cs">
+      <DependentUpon>AdminSetStudentPermission2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminSetStudentPermission2.aspx.designer.cs">
+      <DependentUpon>AdminSetStudentPermission2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminShowRecievedMessages.aspx.cs">
+      <DependentUpon>AdminShowRecievedMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\AdminShowRecievedMessages.aspx.designer.cs">
+      <DependentUpon>AdminShowRecievedMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\EditCourse.aspx.cs">
+      <DependentUpon>EditCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\EditCourse.aspx.designer.cs">
+      <DependentUpon>EditCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\TeacherRegistration.aspx.cs">
+      <DependentUpon>TeacherRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Admin\AdminContentPages\TeacherRegistration.aspx.designer.cs">
+      <DependentUpon>TeacherRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Comments.aspx.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Comments.aspx.designer.cs">
+      <DependentUpon>Comments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\DeletePicFromPictureGallery.aspx.cs">
+      <DependentUpon>DeletePicFromPictureGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\DeletePicFromPictureGallery.aspx.designer.cs">
+      <DependentUpon>DeletePicFromPictureGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\DownloadFiles.aspx.cs">
+      <DependentUpon>DownloadFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\DownloadFiles.aspx.designer.cs">
+      <DependentUpon>DownloadFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\DownloadFiles2.aspx.cs">
+      <DependentUpon>DownloadFiles2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\DownloadFiles2.aspx.designer.cs">
+      <DependentUpon>DownloadFiles2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\DownloadSoftware.aspx.cs">
+      <DependentUpon>DownloadSoftware.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\DownloadSoftware.aspx.designer.cs">
+      <DependentUpon>DownloadSoftware.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\DownloadSoftware2.aspx.cs">
+      <DependentUpon>DownloadSoftware2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\DownloadSoftware2.aspx.designer.cs">
+      <DependentUpon>DownloadSoftware2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\EditPictureGallery.aspx.cs">
+      <DependentUpon>EditPictureGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\EditPictureGallery.aspx.designer.cs">
+      <DependentUpon>EditPictureGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\EnterpriseRequestRegistration.aspx.cs">
+      <DependentUpon>EnterpriseRequestRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\EnterpriseRequestRegistration.aspx.designer.cs">
+      <DependentUpon>EnterpriseRequestRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\EnterpriseRequestRegistrationPhase2.aspx.cs">
+      <DependentUpon>EnterpriseRequestRegistrationPhase2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\EnterpriseRequestRegistrationPhase2.aspx.designer.cs">
+      <DependentUpon>EnterpriseRequestRegistrationPhase2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\EnterpriseRequestRegistrationPhase3.aspx.cs">
+      <DependentUpon>EnterpriseRequestRegistrationPhase3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\EnterpriseRequestRegistrationPhase3.aspx.designer.cs">
+      <DependentUpon>EnterpriseRequestRegistrationPhase3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\EnterpriseRequestRegistrationPhase4.aspx.cs">
+      <DependentUpon>EnterpriseRequestRegistrationPhase4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\EnterpriseRequestRegistrationPhase4.aspx.designer.cs">
+      <DependentUpon>EnterpriseRequestRegistrationPhase4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\MessagePage.aspx.cs">
+      <DependentUpon>MessagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\MessagePage.aspx.designer.cs">
+      <DependentUpon>MessagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\MP.Master.cs">
+      <DependentUpon>MP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\MP.Master.designer.cs">
+      <DependentUpon>MP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\Picture.aspx.cs">
+      <DependentUpon>Picture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\Picture.aspx.designer.cs">
+      <DependentUpon>Picture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\PictureGalleryShowing\GuestPictureGalleryShoingFull.aspx.cs">
+      <DependentUpon>GuestPictureGalleryShoingFull.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\PictureGalleryShowing\GuestPictureGalleryShoingFull.aspx.designer.cs">
+      <DependentUpon>GuestPictureGalleryShoingFull.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\PictureGalleryShowing\PictureGalleryShoingFull.aspx.cs">
+      <DependentUpon>PictureGalleryShoingFull.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\PictureGalleryShowing\PictureGalleryShoingFull.aspx.designer.cs">
+      <DependentUpon>PictureGalleryShoingFull.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\PresentedTechnicalEducation.aspx.cs">
+      <DependentUpon>PresentedTechnicalEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\PresentedTechnicalEducation.aspx.designer.cs">
+      <DependentUpon>PresentedTechnicalEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\editSoftwareForDownload.aspx.cs">
+      <DependentUpon>editSoftwareForDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\editSoftwareForDownload.aspx.designer.cs">
+      <DependentUpon>editSoftwareForDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\InsertSoftwareForDownload.aspx.cs">
+      <DependentUpon>InsertSoftwareForDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\InsertSoftwareForDownload.aspx.designer.cs">
+      <DependentUpon>InsertSoftwareForDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\StudentPublic.Master.cs">
+      <DependentUpon>StudentPublic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\StudentPublic.Master.designer.cs">
+      <DependentUpon>StudentPublic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PresentationLayer\NewsDetailes.aspx.cs">
+      <DependentUpon>NewsDetailes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\NewsDetailes.aspx.designer.cs">
+      <DependentUpon>NewsDetailes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\PublicPictureGalleries.aspx.cs">
+      <DependentUpon>PublicPictureGalleries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\PublicPictureGalleries.aspx.designer.cs">
+      <DependentUpon>PublicPictureGalleries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\RegisterPresentedTechnicalEducation.aspx.cs">
+      <DependentUpon>RegisterPresentedTechnicalEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\RegisterPresentedTechnicalEducation.aspx.designer.cs">
+      <DependentUpon>RegisterPresentedTechnicalEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\UploadPicture.aspx.cs">
+      <DependentUpon>UploadPicture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\UploadPicture.aspx.designer.cs">
+      <DependentUpon>UploadPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\StudentRegistration.aspx.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\StudentRegistration.aspx.designer.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentControlPanelPage.aspx.cs">
+      <DependentUpon>StudentControlPanelPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentControlPanelPage.aspx.designer.cs">
+      <DependentUpon>StudentControlPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentEditProfile.aspx.cs">
+      <DependentUpon>StudentEditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentEditProfile.aspx.designer.cs">
+      <DependentUpon>StudentEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentMainMP.Master.cs">
+      <DependentUpon>StudentMainMP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentMainMP.Master.designer.cs">
+      <DependentUpon>StudentMainMP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentProtest.aspx.cs">
+      <DependentUpon>StudentProtest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentProtest.aspx.designer.cs">
+      <DependentUpon>StudentProtest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentsCoursesMarks.aspx.cs">
+      <DependentUpon>StudentsCoursesMarks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentsCoursesMarks.aspx.designer.cs">
+      <DependentUpon>StudentsCoursesMarks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentShowAllRecievedMessages.aspx.cs">
+      <DependentUpon>StudentShowAllRecievedMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentShowAllRecievedMessages.aspx.designer.cs">
+      <DependentUpon>StudentShowAllRecievedMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentShowRecievedMessagesFromAdmin.aspx.cs">
+      <DependentUpon>StudentShowRecievedMessagesFromAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentShowRecievedMessagesFromAdmin.aspx.designer.cs">
+      <DependentUpon>StudentShowRecievedMessagesFromAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentShowTeachersForMessage.aspx.cs">
+      <DependentUpon>StudentShowTeachersForMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentShowTeachersForMessage.aspx.designer.cs">
+      <DependentUpon>StudentShowTeachersForMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentsSendResponseToAdmin.aspx.cs">
+      <DependentUpon>StudentsSendResponseToAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentsSendResponseToAdmin.aspx.designer.cs">
+      <DependentUpon>StudentsSendResponseToAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentsSendResponseToTeacher.aspx.cs">
+      <DependentUpon>StudentsSendResponseToTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentsSendResponseToTeacher.aspx.designer.cs">
+      <DependentUpon>StudentsSendResponseToTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentTakeCourseGroup.aspx.cs">
+      <DependentUpon>StudentTakeCourseGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\StudentTakeCourseGroup.aspx.designer.cs">
+      <DependentUpon>StudentTakeCourseGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\SudentSendExerciseSolution.aspx.cs">
+      <DependentUpon>SudentSendExerciseSolution.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Student\SudentSendExerciseSolution.aspx.designer.cs">
+      <DependentUpon>SudentSendExerciseSolution.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherAddCourse.aspx.cs">
+      <DependentUpon>TeacherAddCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherAddCourse.aspx.designer.cs">
+      <DependentUpon>TeacherAddCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherControlPanelPage.aspx.cs">
+      <DependentUpon>TeacherControlPanelPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherControlPanelPage.aspx.designer.cs">
+      <DependentUpon>TeacherControlPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherCreateExercise.aspx.cs">
+      <DependentUpon>TeacherCreateExercise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherCreateExercise.aspx.designer.cs">
+      <DependentUpon>TeacherCreateExercise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherEditGroupCourse.aspx.cs">
+      <DependentUpon>TeacherEditGroupCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherEditGroupCourse.aspx.designer.cs">
+      <DependentUpon>TeacherEditGroupCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherEditNews.aspx.cs">
+      <DependentUpon>TeacherEditNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherEditNews.aspx.designer.cs">
+      <DependentUpon>TeacherEditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherEditProfile.aspx.cs">
+      <DependentUpon>TeacherEditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherEditProfile.aspx.designer.cs">
+      <DependentUpon>TeacherEditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherGroupCourse.aspx.cs">
+      <DependentUpon>TeacherGroupCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherGroupCourse.aspx.designer.cs">
+      <DependentUpon>TeacherGroupCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherInserNews.aspx.cs">
+      <DependentUpon>TeacherInserNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherInserNews.aspx.designer.cs">
+      <DependentUpon>TeacherInserNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherInsertLink.aspx.cs">
+      <DependentUpon>TeacherInsertLink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherInsertLink.aspx.designer.cs">
+      <DependentUpon>TeacherInsertLink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherPeresentedGroupCourse.aspx.cs">
+      <DependentUpon>TeacherPeresentedGroupCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherPeresentedGroupCourse.aspx.designer.cs">
+      <DependentUpon>TeacherPeresentedGroupCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherResponseToStudentProtest.aspx.cs">
+      <DependentUpon>TeacherResponseToStudentProtest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherResponseToStudentProtest.aspx.designer.cs">
+      <DependentUpon>TeacherResponseToStudentProtest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherSelectStudentsForRecieveMessage.aspx.cs">
+      <DependentUpon>TeacherSelectStudentsForRecieveMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherSelectStudentsForRecieveMessage.aspx.designer.cs">
+      <DependentUpon>TeacherSelectStudentsForRecieveMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherSendResponseToStudent.aspx.cs">
+      <DependentUpon>TeacherSendResponseToStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherSendResponseToStudent.aspx.designer.cs">
+      <DependentUpon>TeacherSendResponseToStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherShowAllRecievedMessages.aspx.cs">
+      <DependentUpon>TeacherShowAllRecievedMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherShowAllRecievedMessages.aspx.designer.cs">
+      <DependentUpon>TeacherShowAllRecievedMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherShowRecievedMessages.aspx.cs">
+      <DependentUpon>TeacherShowRecievedMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherShowRecievedMessages.aspx.designer.cs">
+      <DependentUpon>TeacherShowRecievedMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherShowStudentResponseMessages.aspx.cs">
+      <DependentUpon>TeacherShowStudentResponseMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherShowStudentResponseMessages.aspx.designer.cs">
+      <DependentUpon>TeacherShowStudentResponseMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherStudentsOfCourseGroup.aspx.cs">
+      <DependentUpon>TeacherStudentsOfCourseGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherStudentsOfCourseGroup.aspx.designer.cs">
+      <DependentUpon>TeacherStudentsOfCourseGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherStudetsProtests.aspx.cs">
+      <DependentUpon>TeacherStudetsProtests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherStudetsProtests.aspx.designer.cs">
+      <DependentUpon>TeacherStudetsProtests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherUniversity.aspx.cs">
+      <DependentUpon>TeacherUniversity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherUniversity.aspx.designer.cs">
+      <DependentUpon>TeacherUniversity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherViewStudentActivities.aspx.cs">
+      <DependentUpon>TeacherViewStudentActivities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherViewStudentActivities.aspx.designer.cs">
+      <DependentUpon>TeacherViewStudentActivities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherViewStudentExsercises.aspx.cs">
+      <DependentUpon>TeacherViewStudentExsercises.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PresentationLayer\User\Pages\Teacher\TeacherViewStudentExsercises.aspx.designer.cs">
+      <DependentUpon>TeacherViewStudentExsercises.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="PresentationLayer\Admin\AdminContentPages\AJAX GridView\App_Data\" />
+    <Folder Include="PresentationLayer\ApplicationalJQUERIES\JQueryValidation\" />
+    <Folder Include="PresentationLayer\CssMy\Fonts\" />
+    <Folder Include="PresentationLayer\UserUploadedPictures\FirstPagePictures850-350\" />
+    <Folder Include="PresentationLayer\User\Pages\Student\ExerciseSolutionFiles\Temp\" />
+    <Folder Include="PresentationLayer\User\Pages\Student\StudentPictures\" />
+    <Folder Include="PresentationLayer\User\Pages\Teacher\ExerciseFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BuisinessLogicLayer\BuisinessLogicLayer.csproj">
+      <Project>{8ECFB880-B511-4CF3-9049-F44E80D08004}</Project>
+      <Name>BuisinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{922C58C1-1450-44AA-87DB-5EB23935202E}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PresentationLayer\AddPicToPictureGallery.aspx" />
+    <Content Include="PresentationLayer\AddPictureGallery.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AddDeleteBranch.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AddDeleteCourse.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AddDeleteUniversity.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AddTermNumber.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminAddechnicalEducation.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminControlPanelPage.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminEditNews.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminInserNews.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminInsertLink.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminPresentTechnicalEducation.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminSelectStudentsForRecieveMessage.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminSendResponseToStudent.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminSetStudentPermission.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminSetStudentPermission2.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AdminShowRecievedMessages.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AJAX GridView\images\loadingAnim.gif" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AJAX GridView\scripts\jquery-1.3.2.min.js" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\AJAX GridView\scripts\jquery.blockUI.js" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\EditCourse.aspx" />
+    <Content Include="PresentationLayer\Admin\AdminContentPages\TeacherRegistration.aspx" />
+    <Content Include="PresentationLayer\AJAXScripts\3dsnake.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\3MA_loadingcontent.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\3MA_processingbar.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\activityanimation.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\ajax_loader_gray_128.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\ajax_loader_gray_256.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\ajax_loader_green_128.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\ajax_loader_green_256.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\ajax_loader_orange_128.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\ajax_loader_orange_256.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\ajax_loader_red_128.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\ajax_loader_red_64.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\chasingarrows.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\jquery-1.3.2.min.js" />
+    <Content Include="PresentationLayer\AJAXScripts\jquery.blockUI.js" />
+    <Content Include="PresentationLayer\AJAXScripts\load.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\loadingAnim.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\media-floppy-anim.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\pleasewait.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\progressBarLong.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\progress_bar.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\roller.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\spinner3-bluey.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\spinner3-greenie.gif" />
+    <Content Include="PresentationLayer\AJAXScripts\spinner4-black.gif" />
+    <Content Include="PresentationLayer\Comments.aspx" />
+    <Content Include="PresentationLayer\CssMy\mystyles.css" />
+    <Content Include="PresentationLayer\CssMy\floatcontainer.css" />
+    <Content Include="PresentationLayer\CssMy\imageGallery.css" />
+    <Content Include="PresentationLayer\CssMy\main-rollup.css" />
+    <Content Include="PresentationLayer\CssMy\mystylesNew.css" />
+    <Content Include="PresentationLayer\css\floatcontainer.css" />
+    <Content Include="PresentationLayer\css\imageGallery.css" />
+    <Content Include="PresentationLayer\css\main-rollup.css" />
+    <Content Include="PresentationLayer\css\StyleMain.css" />
+    <Content Include="PresentationLayer\css\StyleMP.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Defualt\beyza.JPG" />
+    <Content Include="Defualt\Default.js" />
+    <Content Include="Defualt\englishPage.png" />
+    <Content Include="Defualt\englishPage1.png" />
+    <Content Include="Defualt\englishPic.png" />
+    <Content Include="Defualt\HesabdarAdv.gif" />
+    <Content Include="Defualt\HesabdarAdv.jpg" />
+    <Content Include="Defualt\HesabdarAdv.png" />
+    <Content Include="Defualt\HesabdarAdv2.gif" />
+    <Content Include="Defualt\HesabdarAdv2.jpg" />
+    <Content Include="Defualt\HesabdarAdv2.png" />
+    <Content Include="Defualt\hesabdari-850-350.jpg" />
+    <Content Include="Defualt\hesabdari2-850-350.jpg" />
+    <Content Include="Defualt\image\add.png" />
+    <Content Include="Defualt\image\persianLogo.png" />
+    <Content Include="Defualt\image\sub.png" />
+    <Content Include="Defualt\image\topBack.jpg" />
+    <Content Include="Defualt\image\topBack1.jpg" />
+    <Content Include="Defualt\jquery-1.4.1.min.js" />
+    <Content Include="Defualt\jquery.corner.js" />
+    <Content Include="Defualt\persianPage.png" />
+    <Content Include="Defualt\persianPic.png" />
+    <Content Include="Defualt\Pic 455-340\13.jpg" />
+    <Content Include="Defualt\Pic 455-340\datamining.jpg" />
+    <Content Include="Defualt\Pic 455-340\IT22.jpg" />
+    <Content Include="Defualt\Pic 455-340\IT33.jpg" />
+    <Content Include="Defualt\Pic 455-340\KnowledgeBase.jpg" />
+    <Content Include="Defualt\Pic 455-340\Link_24.jpg" />
+    <Content Include="Defualt\Pic 455-340\programming.jpg" />
+    <Content Include="Defualt\Pic 455-340\programming1.jpg" />
+    <Content Include="Defualt\Pic 455-340\programming2.jpg" />
+    <Content Include="Defualt\Pic 455-340\webdesign.jpg" />
+    <Content Include="Defualt\Pic 455-340\webdesign2.jpg" />
+    <Content Include="Defualt\Pic 455-340\webdesign4.jpg" />
+    <Content Include="Defualt\Pic 455-340\webdesign5.jpg" />
+    <Content Include="Defualt\Pic 455-340\webdesign6.jpg" />
+    <Content Include="Defualt\pic 800-350\HesabdarAdv.jpg" />
+    <Content Include="Defualt\pic 800-350\HesabdarAdv2.jpg" />
+    <Content Include="Defualt\pic 800-350\IT.jpg" />
+    <Content Include="Defualt\pic 800-350\IT1.jpg" />
+    <Content Include="Defualt\pic 800-350\IT2.jpg" />
+    <Content Include="Defualt\pic 800-350\IT3.jpg" />
+    <Content Include="Defualt\pic 800-350\IT4.jpg" />
+    <Content Include="Defualt\Public.js" />
+    <Content Include="Defualt\Slider\jquery-1.6.1.min.js" />
+    <Content Include="Defualt\Slider\jquery-ui.min.js" />
+    <Content Include="Defualt\Slider\next.png" />
+    <Content Include="Defualt\Slider\prev.png" />
+    <Content Include="Defualt\Slider\SlideShow.css" />
+    <Content Include="Defualt\Slider\SlideShow.js" />
+    <Content Include="Defualt\StyleSheet.css" />
+    <Content Include="PresentationLayer\DeletePicFromPictureGallery.aspx" />
+    <Content Include="PresentationLayer\DownloadFiles.aspx" />
+    <Content Include="PresentationLayer\DownloadFiles2.aspx" />
+    <Content Include="PresentationLayer\DownloadSoftware.aspx" />
+    <Content Include="PresentationLayer\DownloadSoftware2.aspx" />
+    <Content Include="PresentationLayer\EditPictureGallery.aspx" />
+    <Content Include="PresentationLayer\EnterpriseRequestRegistration.aspx" />
+    <Content Include="PresentationLayer\EnterpriseRequestRegistrationPhase2.aspx" />
+    <Content Include="PresentationLayer\EnterpriseRequestRegistrationPhase3.aspx" />
+    <Content Include="PresentationLayer\EnterpriseRequestRegistrationPhase4.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="PresentationLayer\images\favicon.ico" />
+    <Content Include="PresentationLayer\images\Icons\AbasMainLogo.png" />
+    <Content Include="PresentationLayer\images\Icons\AbasMainLogo1.png" />
+    <Content Include="PresentationLayer\images\Icons\admin.png" />
+    <Content Include="PresentationLayer\images\Icons\adminmessage.png" />
+    <Content Include="PresentationLayer\images\Icons\advertise.png" />
+    <Content Include="PresentationLayer\images\Icons\ALL-CAPS-icon.png" />
+    <Content Include="PresentationLayer\images\Icons\arrowr_gray.gif" />
+    <Content Include="PresentationLayer\images\Icons\arrow_180_small.jpg" />
+    <Content Include="PresentationLayer\images\Icons\banleftup3.png" />
+    <Content Include="PresentationLayer\images\Icons\banleftup4.png" />
+    <Content Include="PresentationLayer\images\Icons\banleftup5.png" />
+    <Content Include="PresentationLayer\images\Icons\collapse_40b.png" />
+    <Content Include="PresentationLayer\images\Icons\collapse_40b_collapsed.png" />
+    <Content Include="PresentationLayer\images\Icons\Copy of next.png" />
+    <Content Include="PresentationLayer\images\Icons\courseGroup.png" />
+    <Content Include="PresentationLayer\images\Icons\download.png" />
+    <Content Include="PresentationLayer\images\Icons\download1.png" />
+    <Content Include="PresentationLayer\images\Icons\editprofile.png" />
+    <Content Include="PresentationLayer\images\Icons\ergreg.png" />
+    <Content Include="PresentationLayer\images\Icons\examDate.png" />
+    <Content Include="PresentationLayer\images\Icons\exercise.png" />
+    <Content Include="PresentationLayer\images\Icons\False.gif" />
+    <Content Include="PresentationLayer\images\Icons\flasher.gif" />
+    <Content Include="PresentationLayer\images\Icons\forum.png" />
+    <Content Include="PresentationLayer\images\Icons\home.png" />
+    <Content Include="PresentationLayer\images\Icons\homeMain.png" />
+    <Content Include="PresentationLayer\images\Icons\insertMsrks.jpg" />
+    <Content Include="PresentationLayer\images\Icons\left.png" />
+    <Content Include="PresentationLayer\images\Icons\leftMenuBg.png" />
+    <Content Include="PresentationLayer\images\Icons\leftMenuBg1.png" />
+    <Content Include="PresentationLayer\images\Icons\leftmenue1.png" />
+    <Content Include="PresentationLayer\images\Icons\leftmenuelongBg.png" />
+    <Content Include="PresentationLayer\images\Icons\list-style.png" />
+    <Content Include="PresentationLayer\images\Icons\login.png" />
+    <Content Include="PresentationLayer\images\Icons\logout.png" />
+    <Content Include="PresentationLayer\images\Icons\marks.png" />
+    <Content Include="PresentationLayer\images\Icons\messag.png" />
+    <Content Include="PresentationLayer\images\Icons\messageResponse.png" />
+    <Content Include="PresentationLayer\images\Icons\MyEnterpriseBannerOstadDaneshjo.png" />
+    <Content Include="PresentationLayer\images\Icons\MyHeaderLogo1.png" />
+    <Content Include="PresentationLayer\images\Icons\news.png" />
+    <Content Include="PresentationLayer\images\Icons\newWeb.png" />
+    <Content Include="PresentationLayer\images\Icons\next.png" />
+    <Content Include="PresentationLayer\images\Icons\next1.png" />
+    <Content Include="PresentationLayer\images\Icons\next2.png" />
+    <Content Include="PresentationLayer\images\Icons\peresentedCourse.png" />
+    <Content Include="PresentationLayer\images\Icons\pictures.png" />
+    <Content Include="PresentationLayer\images\Icons\prev.png" />
+    <Content Include="PresentationLayer\images\Icons\prev1.png" />
+    <Content Include="PresentationLayer\images\Icons\progress.gif" />
+    <Content Include="PresentationLayer\images\Icons\protest.png" />
+    <Content Include="PresentationLayer\images\Icons\responseToMessage.png" />
+    <Content Include="PresentationLayer\images\Icons\responseToTeacher.png" />
+    <Content Include="PresentationLayer\images\Icons\s-flash.gif" />
+    <Content Include="PresentationLayer\images\Icons\s-flash3.gif" />
+    <Content Include="PresentationLayer\images\Icons\s-flash5.gif" />
+    <Content Include="PresentationLayer\images\Icons\selectCourse.png" />
+    <Content Include="PresentationLayer\images\Icons\sendMessage.png" />
+    <Content Include="PresentationLayer\images\Icons\sitemap.png" />
+    <Content Include="PresentationLayer\images\Icons\sitemap1.png" />
+    <Content Include="PresentationLayer\images\Icons\sitemap2.png" />
+    <Content Include="PresentationLayer\images\Icons\softdownload.png" />
+    <Content Include="PresentationLayer\images\Icons\softdownload2.png" />
+    <Content Include="PresentationLayer\images\Icons\softpermission.png" />
+    <Content Include="PresentationLayer\images\Icons\SoftwareArchitecture.png" />
+    <Content Include="PresentationLayer\images\Icons\stdentMessage.png" />
+    <Content Include="PresentationLayer\images\Icons\student.png" />
+    <Content Include="PresentationLayer\images\Icons\studentResponse.png" />
+    <Content Include="PresentationLayer\images\Icons\tab-arrow.html" />
+    <Content Include="PresentationLayer\images\Icons\Tadris.png" />
+    <Content Include="PresentationLayer\images\Icons\teacherMessage.png" />
+    <Content Include="PresentationLayer\images\Icons\True.gif" />
+    <Content Include="PresentationLayer\images\Icons\university-graduation.png" />
+    <Content Include="PresentationLayer\images\Icons\university.png" />
+    <Content Include="PresentationLayer\images\Icons\wefwe.png" />
+    <Content Include="PresentationLayer\images\Icons\widget-comment.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\bg.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\email.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\facebook.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\fullscreen.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\info.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\info_close.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\info_icon.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\left_arrow.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\left_arrow_2.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\music.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\music_left.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\music_pause.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\music_play.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\music_right.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\normalscreen.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\pause_icon.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\pause_icon_2.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\play_icon.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\play_icon_2.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\preloader.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\preloader_bg.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\right_arrow.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\right_arrow_2.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\share.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\thumb_close.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\thumb_hover.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\thumb_left.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\thumb_right.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\twitter.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\up_arrow.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\video_close.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\video_play.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\video_preloader.gif" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\vid_bg.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\vid_mute.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\vid_pause.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\vid_play.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\vid_progress.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\vid_total.png" />
+    <Content Include="PresentationLayer\images\PictureGalleryShowingGraphics\vid_volume.png" />
+    <Content Include="PresentationLayer\Jqueries\Slider1css\SlideShow.css" />
+    <Content Include="PresentationLayer\Jqueries\Slider1js\jquery-1.6.1.min.js" />
+    <Content Include="PresentationLayer\Jqueries\Slider1js\jquery-ui.min.js" />
+    <Content Include="PresentationLayer\Jqueries\Slider1js\SlideShow.js" />
+    <Content Include="PresentationLayer\jsMy\fancybox\blank.gif" />
+    <Content Include="PresentationLayer\jsMy\fancybox\fancybox-x.png" />
+    <Content Include="PresentationLayer\jsMy\fancybox\fancybox-y.png" />
+    <Content Include="PresentationLayer\jsMy\fancybox\fancybox.png" />
+    <Content Include="PresentationLayer\jsMy\fancybox\fancy_title_over.png" />
+    <Content Include="PresentationLayer\jsMy\fancybox\jquery.fancybox-1.3.1.css" />
+    <Content Include="PresentationLayer\jsMy\fancybox\jquery.fancybox-1.3.1.js" />
+    <Content Include="PresentationLayer\jsMy\fancybox\jquery.mousewheel-3.0.2.pack.js" />
+    <Content Include="PresentationLayer\jsMy\jquery-1.4.2.min.js" />
+    <Content Include="PresentationLayer\jsMy\tabs\Jquery-tabs.js" />
+    <Content Include="PresentationLayer\jsMy\vbulletin-core.js" />
+    <Content Include="PresentationLayer\jsMy\yuiloader-dom-event.js" />
+    <Content Include="PresentationLayer\js\Game_slider.js" />
+    <Content Include="PresentationLayer\js\jquery-1.4.2.min.js" />
+    <Content Include="PresentationLayer\js\jquery.min.js" />
+    <Content Include="PresentationLayer\js\jquery.reveal.js" />
+    <Content Include="PresentationLayer\js\Top-Scroll.js" />
+    <Content Include="PresentationLayer\js\vbulletin-core.js" />
+    <Content Include="PresentationLayer\js\yuiloader-dom-event.js" />
+    <Content Include="PresentationLayer\Main.aspx" />
+    <Content Include="PresentationLayer\MessagePage.aspx" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.doc.jpg" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.docx.jpg" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.pdf.jpg" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.pps.jpg" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.ppsx.jpg" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.ppt.jpg" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.pptx.jpg" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.rar.jpg" />
+    <Content Include="PresentationLayer\NewsFiles\downloadicon\.zip.jpg" />
+    <Content Include="PresentationLayer\NewsImages\1316855826_kmplayer.jpg" />
+    <Content Include="PresentationLayer\NewsImages\1378635227_avg-internet-security.jpg" />
+    <Content Include="PresentationLayer\NewsImages\1380519797_mcgraw-hill.jpg" />
+    <Content Include="PresentationLayer\NewsImages\abas.jpg" />
+    <Content Include="PresentationLayer\NewsImages\abas600.JPG" />
+    <Content Include="PresentationLayer\NewsImages\default.jpg" />
+    <Content Include="PresentationLayer\Picture.aspx" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\css\cj_gallery.css" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\css\cj_gallery_ajax.css" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\css\cj_gallery_fixed_size.css" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\css\cj_gallery_ie_7.css" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\css\cj_gallery_ie_8.css" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\css\cj_gallery_video.css" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\css\cj_slider_preview.css" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\GuestPictureGalleryShoingFull.aspx" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-contact-form.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-contact-form.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-galleryjack-core.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-galleryjack-core.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-galleryjack-settings.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-galleryjack-settings.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-html-video.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-html-video.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-music-player.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-music-player.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-top-right-buttons.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\cj-top-right-buttons.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\jquery.address-1.4.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\jquery.clip-animation.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\jquery.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\mdetect.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\js\modernizr.min.js" />
+    <Content Include="PresentationLayer\PictureGalleryShowing\PictureGalleryShoingFull.aspx" />
+    <Content Include="Pic\Ajax\BuyBasket.png" />
+    <Content Include="Pic\Ajax\FactorPurse.png" />
+    <Content Include="Pic\Ajax\MessageSend.png" />
+    <Content Include="Pic\banner.jpg" />
+    <Content Include="Pic\banner0.jpg" />
+    <Content Include="Pic\banner1.jpg" />
+    <Content Include="Pic\banner3.jpg" />
+    <Content Include="Pic\banner4.jpg" />
+    <Content Include="Pic\banner5.jpg" />
+    <Content Include="Pic\Bimeh.jpg" />
+    <Content Include="Pic\body-bg.jpg" />
+    <Content Include="Pic\darGah.png" />
+    <Content Include="Pic\edu.png" />
+    <Content Include="Pic\facebook.png" />
+    <Content Include="Pic\facebook1.png" />
+    <Content Include="Pic\gmail.png" />
+    <Content Include="Pic\googleplus.png" />
+    <Content Include="Pic\Icon\apple.png" />
+    <Content Include="Pic\Icon\book.png" />
+    <Content Include="Pic\Icon\check2.png" />
+    <Content Include="Pic\Icon\document.png" />
+    <Content Include="Pic\Icon\favicon %2813%29.png" />
+    <Content Include="Pic\Icon\favicon %284%29.png" />
+    <Content Include="Pic\Icon\favorite.png" />
+    <Content Include="Pic\Icon\female.1.png" />
+    <Content Include="Pic\Icon\female.2.png" />
+    <Content Include="Pic\Icon\female.3.png" />
+    <Content Include="Pic\Icon\film.png" />
+    <Content Include="Pic\Icon\folder-a.png" />
+    <Content Include="Pic\Icon\folder-b.png" />
+    <Content Include="Pic\Icon\gender.png" />
+    <Content Include="Pic\Icon\gotop.png" />
+    <Content Include="Pic\Icon\gotop1.png" />
+    <Content Include="Pic\Icon\home.png" />
+    <Content Include="Pic\Icon\login.png" />
+    <Content Include="Pic\Icon\male.png" />
+    <Content Include="Pic\Icon\move.png" />
+    <Content Include="Pic\Icon\music.png" />
+    <Content Include="Pic\Icon\Namad.png" />
+    <Content Include="Pic\Icon\password.png" />
+    <Content Include="Pic\Icon\pdf.png" />
+    <Content Include="Pic\Icon\perspolis.png" />
+    <Content Include="Pic\Icon\phone.png" />
+    <Content Include="Pic\Icon\Play.png" />
+    <Content Include="Pic\Icon\Post.png" />
+    <Content Include="Pic\Icon\s-flash.gif" />
+    <Content Include="Pic\Icon\s-flash3.gif" />
+    <Content Include="Pic\Icon\s-flash5.gif" />
+    <Content Include="Pic\Icon\shop--bag.png" />
+    <Content Include="Pic\Icon\shop-bag.png" />
+    <Content Include="Pic\Icon\shop.png" />
+    <Content Include="Pic\Icon\telephone.png" />
+    <Content Include="Pic\Icon\top.png" />
+    <Content Include="Pic\Icon\ul-list.png" />
+    <Content Include="Pic\info.png" />
+    <Content Include="Pic\irc_protocol.png" />
+    <Content Include="Pic\lihover.gif" />
+    <Content Include="Pic\lihover.jpg" />
+    <Content Include="Pic\Logo.jpg" />
+    <Content Include="Pic\mail_generic.png" />
+    <Content Include="Pic\msn_protocol.png" />
+    <Content Include="Pic\MyEnterpriseBannerOstadDaneshjo.png" />
+    <Content Include="Pic\MyHeaderLogo.png" />
+    <Content Include="Pic\MyHeaderLogo1.png" />
+    <Content Include="Pic\newsbg.gif" />
+    <Content Include="Pic\Photo0072.jpg" />
+    <Content Include="Pic\ravesh.png" />
+    <Content Include="Pic\rbder.png" />
+    <Content Include="Pic\search-icon.png" />
+    <Content Include="Pic\shit.png" />
+    <Content Include="Pic\skype.png" />
+    <Content Include="Pic\skype_protocol.png" />
+    <Content Include="Pic\top.png" />
+    <Content Include="Pic\topBack.jpg" />
+    <Content Include="Pic\twitter.png" />
+    <Content Include="Pic\vimeo.png" />
+    <Content Include="Pic\whitey.png" />
+    <Content Include="Pic\yahoo_protocol.png" />
+    <Content Include="PresentationLayer\PresentedTechnicalEducation.aspx" />
+    <Content Include="PresentationLayer\PublicPictureGalleries.aspx" />
+    <Content Include="PresentationLayer\RegisterPresentedTechnicalEducation.aspx" />
+    <Content Include="PresentationLayer\UserUploadedPictures\1.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\13.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\datamining.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\IMG_1258.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\IMG_1277.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\IMG_1298.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\IMG_1336.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\P1010818.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\sqlser.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\1.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\13.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\abas.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\abas600.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\datamining.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\DSC00039.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\DSC00040.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\DSC02919aa.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\IMAG0036.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\IMAG0037.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\IMAG0038.jpg" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\IMG_1258.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\IMG_1277.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\IMG_1298.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\IMG_1336.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\P1010818.JPG" />
+    <Content Include="PresentationLayer\UserUploadedPictures\thumbs\sqlser.jpg" />
+    <Content Include="PresentationLayer\NewsDetailes.aspx" />
+    <Content Include="PresentationLayer\UploadPicture.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Defualt\englishPageBlack.psd" />
+    <None Include="Defualt\HesabdarAdv.psd" />
+    <None Include="Defualt\HesabdarAdv2.psd" />
+    <None Include="Defualt\persianLogo.psd" />
+    <None Include="PresentationLayer\images\Icons\persianlogo.lmk" />
+    <None Include="PresentationLayer\images\Icons\Thumbs.db" />
+    <None Include="PresentationLayer\images\PictureGalleryShowingGraphics\Thumbs.db" />
+    <Content Include="PresentationLayer\MP.Master" />
+    <None Include="PresentationLayer\NewsFiles\downloadicon\Thumbs.db" />
+    <None Include="PresentationLayer\NewsFiles\identitet_pe.pdf" />
+    <None Include="PresentationLayer\NewsFiles\realstate-shiraz.pdf" />
+    <None Include="PresentationLayer\PictureGalleryShowing\php\cj-ajax.php" />
+    <None Include="PresentationLayer\PictureGalleryShowing\php\cj-contact.php" />
+    <None Include="Pic\banner2.psd" />
+    <Content Include="PresentationLayer\User\Pages\editSoftwareForDownload.aspx" />
+    <Content Include="PresentationLayer\User\Pages\InsertSoftwareForDownload.aspx" />
+    <Content Include="PresentationLayer\User\Pages\StudentRegistration.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentControlPanelPage.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentEditProfile.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentProtest.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentsCoursesMarks.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentShowAllRecievedMessages.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentShowRecievedMessagesFromAdmin.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentShowTeachersForMessage.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentsSendResponseToAdmin.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentsSendResponseToTeacher.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\StudentTakeCourseGroup.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Student\SudentSendExerciseSolution.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherAddCourse.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherControlPanelPage.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherCreateExercise.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherEditGroupCourse.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherEditNews.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherEditProfile.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherGroupCourse.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherInserNews.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherInsertLink.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherPeresentedGroupCourse.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherPictures\abas.jpg" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherPictures\abas600.JPG" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherPictures\profilepic.jpg" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherResponseToStudentProtest.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherSelectStudentsForRecieveMessage.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherSendResponseToStudent.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherShowAllRecievedMessages.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherShowRecievedMessages.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherShowStudentResponseMessages.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherStudentsOfCourseGroup.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherStudetsProtests.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherUniversity.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherViewStudentActivities.aspx" />
+    <Content Include="PresentationLayer\User\Pages\Teacher\TeacherViewStudentExsercises.aspx" />
+    <Content Include="web.config" />
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="PresentationLayer\User\Pages\Student\StudentMainMP.Master" />
+    <Content Include="PresentationLayer\User\Pages\StudentPublic.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16548</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
